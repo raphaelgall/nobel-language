@@ -1,0 +1,108 @@
+---
+title: "Nobel prize statistics"
+author: "Raphael Gall"
+date: "31. August 2016"
+output: html_document
+---
+Quantitative analysis of nobel prize speeches in R
+
+Fun project by Raphael Gall. 
+
+Literature and peace are the corpus for the text analysis. All available speeches betwee the 1940s to today. form the corpus. Publicly available on http://www.nobelprize.org One of my favorite speeches is http://www.nobelprize.org/nobel_prizes/literature/laureates/1949/faulkner-speech.html '[...] There is only the question: When will I be blown up? Because of this, the young man or woman writing today has forgotten the problems of the human heart in conflict with itself which alone can make good writing because only that is worth writing about, worth the agony and the sweat.'
+
+The technologies like information extraction, summarization, categorization, clustering and information visualization, are used in the text mining process.
+
+```{r source_and_processing, cache = TRUE, echo = FALSE}
+library('tm')
+library('wordcloud')
+library('SnowballC')
+library('ggplot2')
+library('cluster')
+library('fpc')
+library('psych')
+library('ggvis')
+
+source('source.R')
+source('processing.R')
+###```
+
+#Descriptives of peace prizes
+
+#Nobel Prize for Peace
+##```{r peace, echo = FALSE}
+
+#### all sppeaches for Peace ####
+# 
+# #all speeches
+# nobel_prize    <- nobel_peace
+# 
+# #most frequent words
+# peace_mostfrequentwords50 <- frequentwordsincorpus(nobel_prize)
+# 
+#wordcloud
+# set.seed(142)
+# dark2                  <- brewer.pal(6, "Dark2")
+# peace_wordcloudcolored <- wordcloud(names(peace_mostfrequentwords50), freq, max.words=100, rot.per=0.2, colors=dark2)
+# 
+# #Hierarchal Clustering
+# d     <- dist(t(dtmss), method="euclidian")
+# fit   <- hclust(d=d, method="ward")
+# peace_hierar_clust <- plot(fit, hang=-1)
+# groups <- cutree(fit, k=5)   # "k=" defines the number of clusters you are using
+# rect.hclust(fit, k=5, border="red") # draw dendogram with red borders around the 5 clusters
+# 
+# #k-means clustering
+# dclust  <- dist(t(dtmss), method="euclidian")
+# kfit    <- kmeans(dclust, 5)
+# peace_clusterplot <- clusplot(as.matrix(d), kfit$cluster, color=T, shade=T, labels=2, lines=0)
+# 
+# peace_barplot <- barplot(peace_mostfrequentwords15, las = 2, names.arg = names(peace_mostfrequentwords15),
+#                          col ="lightblue", main ="Most frequent words",
+#                          ylab = "Word frequencies")
+# 
+# peace_frequencyplot <- ggplot(peace_mostfrequentwords15, aes(word, freq))
+# peace_frequencyplot <- frequencyplot + geom_bar(stat="identity")
+# peace_frequencyplot <- frequencyplot + theme(axis.text.x=element_text(angle=45, hjust=1))
+
+### peace by decade
+peace_word_frequencies_topfive %>% ggvis(~years, ~peace_word_frequencies_topfive[ , 1]) %>% layer_lines(stroke = literature_column_names[1]) %>% add_axis("x", title = "Importance of words in peace nobel prize for peace speeches(by decades)") %>% add_axis("y", title = "Word frequency") %>% layer_paths(y = ~peace_word_frequencies_topfive[ , 2], stroke = literature_column_names[2]) %>% layer_paths(y = ~peace_word_frequencies_topfive[ , 3], stroke = literature_column_names[3]) %>% layer_paths(y = ~peace_word_frequencies_topfive[ , 4], stroke = literature_column_names[4]) %>% layer_paths(y = ~peace_word_frequencies_topfive[ , 5], stroke = literature_column_names[5])
+
+pairs.panels(peace_word_frequencies_topfive[ , - 6])
+
+```
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+
+#Nobel Prize for Literature
+```{r literature, cache = TRUE, echo = FALSE}
+# 
+# barplot(mostfrequentwords, las = 2, names.arg = names(mostfrequentwords),
+# col ="lightblue", main ="Most frequent words",
+# ylab = "Word frequencies")
+# 
+# frequencyplot
+# 
+# set.seed(142)   
+# dark2 <- brewer.pal(6, "Dark2")   
+# wordcloud(names(freq), freq, max.words=100, rot.per=0.2, colors=dark2) 
+# 
+# #Hierarchal Clustering
+# plot(fit, hang=-1)
+# groups <- cutree(fit, k=5)   # "k=" defines the number of clusters you are using   
+# rect.hclust(fit, k=5, border="red") # draw dendogram with red borders around the 5 clusters   
+# 
+# #k-means clustering
+# dclust  <- dist(t(dtmss), method="euclidian")   
+# kfit    <- kmeans(dclust, 5)   
+# clusplot(as.matrix(d), kfit$cluster, color=T, shade=T, labels=2, lines=0)   
+# 
+### literature by decade
+literature_word_frequencies_topfive %>% ggvis(~years, ~literature_word_frequencies_topfive[ , 1]) %>% layer_lines(stroke = literature_column_names[1]) %>% add_axis("x", title = "Importance of words in peace nobel prize for peace speeches(by decades)") %>% add_axis("y", title = "Word frequency") %>% layer_paths(y = ~literature_word_frequencies_topfive[ , 2], stroke = literature_column_names[2]) %>% layer_paths(y = ~literature_word_frequencies_topfive[ , 3], stroke = literature_column_names[3]) %>% layer_paths(y = ~literature_word_frequencies_topfive[ , 4], stroke = literature_column_names[4]) %>% layer_paths(y = ~literature_word_frequencies_topfive[ , 5], stroke = literature_column_names[5])
+
+literature_word_frequencies_topfive %>% ggvis(~years, ~one) %>% layer_lines(stroke = 'one') %>% add_axis("x", title = "Importance of words in literature nobel prize for peace speeches(by decades)")    %>% add_axis("y", title = "Word frequency") %>% layer_paths(y = ~world, stroke = 'world') %>% layer_paths(y = ~will, stroke = 'will') %>% layer_paths(y = ~can, stroke = 'can') %>% layer_paths(y = ~time, stroke = 'time')
+
+pairs.panels(literature_word_frequencies_topfive[ , - 6])
+
+```
+

@@ -1,0 +1,30 @@
+# R environment
+.Renviron
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+renv/staging/
+renv/python/
+
+# Generated data
+data/*.db
+
+# Cloned repo git history and R project files
+nobelprizestats/.git/
+nobelprizestats/.Rproj.user/
+nobelprizestats/.Rhistory
+nobelprizestats/.RData
+
+# Claude settings (local only)
+.claude/settings.local.json
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Google Drive
+*.gdoc
+*.gsheet
+*.gslides

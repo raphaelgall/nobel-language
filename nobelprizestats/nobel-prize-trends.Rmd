@@ -1,0 +1,506 @@
+---
+title: "Nobel Prize Trends"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+# Source and Context  --------------------------------------------------------------
+
+# Purpose
+# Show Trends and changes in the content and kind of recipents of nobel prizes.
+# Use the Nobel Prize as a window in the changes in science, humanities and geo-politics of the 20th and early 21st century.
+# Show the value that is hidden in publicly available data
+
+# workflow: download from github, reproduce early graphs, orderthrough layout, re-factor the code basis, include the missing years' data, identify highlights, write up of key findings, re-calculate the relative contributions  suing the recent packages, structure a medium article about the topic
+
+# Packages:
+pacman::p_load(cluster, dplyr, flexdashboard, fpc, ggplot2, ggvis, here, tidyverse, tidytext, SnowballC, stringr, tm, wordcloud)
+
+# Load data: 
+peacedata           <- file.path("nobelprize_pea/1940_2016")
+literaturedata      <- file.path("nobelprize_lit/1949_2016")
+
+# peace_text          <- readtext::readtext(here::here("nobelprize_pea/1940_2016","*.txt"))
+# literature_text     <- readtext::readtext(here::here("nobelprize_lit/1949_2016","*.txt"))
+
+
+peace_all           <- readtext::readtext(here::here("nobelprize_pea/all","*.txt"),
+                                          docvarsfrom = "filenames",
+                                          docvarnames = c("author", 
+                                                          "year"),
+                                          dvsep       = "_") %>% 
+                       dplyr::arrange(year) %>% 
+                       dplyr::mutate(count = row_number())
+
+literature_all      <- readtext::readtext(here::here("nobelprize_lit/all","*.txt"),
+                                          docvarsfrom = "filenames",
+                                          docvarnames = c("author", 
+                                                          "year"),
+                                          dvsep       = "_") %>% 
+                       dplyr::arrange(year) %>% 
+                       dplyr::mutate(count = row_number())
+
+# 
+# 
+# 
+# 
+# # 
+# test <- readtext::readtext(here::here("nobelprize_pea/all","*.txt"),
+#                        docvarsfrom = "filenames",
+#                        docvarnames = c("author", 
+#                                        "year"),
+#                        dvsep       = "_") %>% 
+#         dplyr::arrange(year) %>% 
+#         dplyr::mutate(count = row_number())
+# 
+# test_meta <- test %>% select(-text)
+# 
+# 
+# test_tibl <- tibble(text = test$text) %>% 
+#   dplyr::mutate(speech = 1:length(test$text),
+#                 text = str_split(text, pattern ="\\n", n = Inf)) %>%
+#   tidyr::unnest(cols = c(text)) %>% 
+#   dplyr::group_by(speech) %>% 
+#   dplyr::add_tally() %>% 
+#   dplyr::mutate(line = 1:max(n)) %>% 
+#   dplyr::ungroup(speech) %>% 
+#   dplyr::select(speech, line, text)
+# 
+# 
+# 
+# peace_texts_meta_tbl <- left_join(test_tibl, test_meta, by = c("speech" = "count"))                                 
+# peace_texts_meta_tbl
+# 
+# peace_tidy <- peace_texts_meta_tbl %>% 
+#               unnest_tokens(word, text)
+# 
+# data(stop_words)
+# 
+# peace_tidy <- peace_tidy %>% 
+#               anti_join(stop_words)
+#   
+# 
+# peace_tidy_count <- peace_tidy %>% 
+#                     count(word, sort = TRUE) 
+# 
+# 
+# 
+# #library(tidyr)
+# 
+# peace_sentiment <- peace_tidy %>%
+#   inner_join(get_sentiments("bing")) %>%
+#   count(speech, index = line, sentiment) %>%
+#   spread(sentiment, n, fill = 0) %>%
+#   mutate(sentiment = positive - negative)
+# 
+# 
+# 
+# peace_sentiment_meta <- peace_sentiment %>% left_join(test_meta, by = c("speech" = "count"))
+#   
+# selection <- peace_sentiment_meta %>% filter(speech %in% c(1:10))
+# 
+# ggplot(selection, aes(index, sentiment, fill = author)) +
+#   geom_col(show.legend = FALSE) +
+#   facet_wrap(~author, ncol = 2, scales = "free_x")
+# # saslculate toatl sentiment per speech and variance.
+# 
+# 
+# 
+# 
+# peace_sentiment_per_speech <- peace_tidy %>%
+#   inner_join(get_sentiments("bing")) %>%
+#   count(speech, index = speech, sentiment) %>%
+#   spread(sentiment, n, fill = 0) %>%
+#   mutate(sentiment = positive - negative)
+# 
+# peace_sentiment_per_speech_meta <- peace_sentiment_per_speech %>% left_join(test_meta, by = c("speech" = "count"))
+# 
+# 
+# selection_per_speech <- peace_sentiment_per_speech_meta %>% filter(speech %in% c(1:10))
+# 
+# 
+# ggplot(peace_sentiment_per_speech_meta, aes(year, sentiment)) + #, fill = author)) +
+#   geom_col(show.legend = FALSE) #+
+  # facet_wrap(~author, ncol = 2, scales = "free_x")
+# 
+# test[1,2]
+# # 
+# # test %>% select(text) %>% str()
+# # 
+# string <- test[1,2]
+# string
+# # 
+# split <- str_split_fixed(string,"\n", n = Inf)
+# 
+# split_df <- as.data.frame(split)
+# split_df
+# str(split)
+# text_df <- tibble(line = 1:133, text = split)
+# 
+# text_df
+# 
+# 
+# test_corpus                  <- test[1,] %>% select(text) %>% str()#tm::Corpus()
+# 
+# str()
+# library(janeaustenr)
+# 
+# austen_books()
+
+# peace_text[,1] %>% tm_map(stripWhitespace)
+
+# text_df <- peace_text %>% 
+#            filter(doc_id == "Al-Sadat_Begin_1978.txt") %>% 
+#            tibble(line = 1:4, text = text)
+# 
+# 
+# tibble(line = 1:length(peace_text), text = peace_text)
+# 
+# length(peace_text[1,1])
+# peace_text %>% select(doc_id) %>% stringr::str_to_lower()
+# 
+# str(peace_text)
+# colnames(peace_text)
+
+# literature_text[1,"text"]
+# literature_text[8,"text"]
+# literature_text[20,"text"]
+
+#explore and idnetify how backlash separator '\' can be sued to split into lines.
+# remove '.txt. in clumn doc_id
+# shift suffix to prefix or seprate column on year, ideally split into year and author column
+# sort order order by year
+# produce peace files akin to austinbooks(), so that they are normalised files that match the tidy principles as tidytext tibbles
+# 
+
+#load texts for each decade separatly per prize
+peacedata_1940          <-   file.path("nobelprize_pea/1940")
+peacedata_1950          <-   file.path("nobelprize_pea/1950")
+peacedata_1960          <-   file.path("nobelprize_pea/1960")
+peacedata_1970          <-   file.path("nobelprize_pea/1970")
+peacedata_1980          <-   file.path("nobelprize_pea/1980")
+peacedata_1990          <-   file.path("nobelprize_pea/1990")
+peacedata_2000          <-   file.path("nobelprize_pea/2000")
+peacedata_2010          <-   file.path("nobelprize_pea/2010")
+literaturedata_1940     <-   file.path("nobelprize_lit/1940")
+literaturedata_1950     <-   file.path("nobelprize_lit/1950")
+literaturedata_1960     <-   file.path("nobelprize_lit/1960")
+literaturedata_1970     <-   file.path("nobelprize_lit/1970")
+literaturedata_1980     <-   file.path("nobelprize_lit/1980")
+literaturedata_1990     <-   file.path("nobelprize_lit/1990")
+literaturedata_2000     <-   file.path("nobelprize_lit/2000")
+literaturedata_2010     <-   file.path("nobelprize_lit/2010")
+
+
+# Functions, variables and parameters:
+afinn   <- get_sentiments("afinn")
+bing    <- get_sentiments("bing")
+nrc     <- get_sentiments("nrc")
+
+data(stop_words)
+
+years          <- seq(1940, 2010, 10)
+frequencies    <- c(1:length(years))
+numberofwords  <- 5
+
+#select the most frequent words out of corpus.
+frequentwordsincorpus <- function (x)
+{
+  
+  #all speeches
+  nobel_prize    <- x
+  
+  #preprocessing
+  #remove number, capitalisation, common words, puntucation, other meaningless bits.
+  nobel_prize  <- tm::tm_map(nobel_prize, removePunctuation)
+  nobel_prize  <- tm::tm_map(nobel_prize, removeNumbers)
+  nobel_prize  <- tm::tm_map(nobel_prize, tolower)#lowercase
+  nobel_prize  <- tm::tm_map(nobel_prize, removeWords, stopwords("english"))
+  nobel_prize  <- tm::tm_map(nobel_prize, stemDocument)
+  nobel_prize  <- tm::tm_map(nobel_prize, stripWhitespace)
+ # nobel_prize  <- tm_map(nobel_prize, PlainTextDocument)
+ 
+  #stage the data
+  dtm   <- tm::DocumentTermMatrix(nobel_prize)
+  tdm   <- tm::TermDocumentMatrix(nobel_prize)
+  
+  #removing sparse terms
+  dtms  <- tm::removeSparseTerms(dtm, 0.1)
+  
+  #Clustering by Term Similarity
+  dtmss <- tm::removeSparseTerms(dtm, 0.15) # This makes a matrix that is only 15% empty space, maximum.
+  
+  #findFreqTerms(dtms, lowfreq=50)
+  freq  <- colSums(as.matrix(dtms))
+  freq
+  freq  <- sort(colSums(as.matrix(dtm)), decreasing = TRUE)
+  wf    <- data.frame(word = names(freq), freq = freq)
+  
+  #frequencies are key outcome of the pre-processing
+  mostfrequentwords50                <- wf[1:50,]
+  #mostfrequentwords15               <- freq[tail(ord)]
+  
+  return(mostfrequentwords50)
+}
+
+#matrix with top words x years in decades
+compute_word_frequencies_topfive_byyear <- function (x) {
+  
+  #dataframe empty to be filled
+  word_frequencies_topfive_byyear           <- data.frame(matrix(0, ncol = length(years), nrow = length(x)), row.names = x)
+  colnames(word_frequencies_topfive_byyear) <- years
+  
+  #fill dataframe
+  for (i in 1:length(nobel_peace_bydecade)) {
+    count       <- i
+    nobel_prize <- nobel_peace_bydecade[[count]]
+    
+    mostfrequentwords <- frequentwordsincorpus(nobel_prize)
+    
+    #create entries of each word(row) for each decade
+    for (j in x) {
+      # count+1 since the first oclumn is the word
+      word_frequencies_topfive_byyear[j, count]     <- mostfrequentwords[j, 'freq']
+    }
+  }
+  #goal is dataframe of frequencies
+  return(word_frequencies_topfive_byyear)
+}
+
+
+# data transformation:
+nobel_peace                   <- tm::Corpus(DirSource(peacedata))
+nobel_literature              <- tm::Corpus(DirSource(literaturedata))
+nobel_peace_1940              <- tm::Corpus(DirSource(peacedata_1940))
+nobel_peace_1950              <- tm::Corpus(DirSource(peacedata_1950))
+nobel_peace_1960              <- tm::Corpus(DirSource(peacedata_1960))
+nobel_peace_1970              <- tm::Corpus(DirSource(peacedata_1970))
+nobel_peace_1980              <- tm::Corpus(DirSource(peacedata_1980))
+nobel_peace_1990              <- tm::Corpus(DirSource(peacedata_1990))
+nobel_peace_2000              <- tm::Corpus(DirSource(peacedata_2000))
+nobel_peace_2010              <- tm::Corpus(DirSource(peacedata_2010))
+nobel_literature_1940         <- tm::Corpus(DirSource(literaturedata_1940))
+nobel_literature_1950         <- tm::Corpus(DirSource(literaturedata_1950))
+nobel_literature_1960         <- tm::Corpus(DirSource(literaturedata_1960))
+nobel_literature_1970         <- tm::Corpus(DirSource(literaturedata_1970))
+nobel_literature_1980         <- tm::Corpus(DirSource(literaturedata_1980))
+nobel_literature_1990         <- tm::Corpus(DirSource(literaturedata_1990))
+nobel_literature_2000         <- tm::Corpus(DirSource(literaturedata_2000))
+nobel_literature_2010         <- tm::Corpus(DirSource(literaturedata_2010))
+
+
+#store speeches by decades in list
+nobel_peace_bydecade <- list(
+  nobel_peace_1940,
+  nobel_peace_1950,
+  nobel_peace_1960,
+  nobel_peace_1970,
+  nobel_peace_1980,
+  nobel_peace_1990,
+  nobel_peace_2000,
+  nobel_peace_2010
+)
+
+nobel_literature_bydecade <- list(
+  nobel_literature_1940,
+  nobel_literature_1950,
+  nobel_literature_1960,
+  nobel_literature_1970,
+  nobel_literature_1980,
+  nobel_literature_1990,
+  nobel_literature_2000,
+  nobel_literature_2010
+)
+
+
+peace_all_meta      <- peace_all %>% select(-text)
+literature_all_meta <- literature_all %>% select(-text)
+
+
+peace_tidy_tbl      <- tibble(text = peace_all$text) %>% 
+                       dplyr::mutate(speech = 1:length(peace_all$text),
+                                     text = str_split(text, pattern ="\\n", n = Inf)) %>%
+                       tidyr::unnest(cols = c(text)) %>% 
+                       dplyr::group_by(speech) %>% 
+                       dplyr::add_tally() %>% 
+                       dplyr::mutate(line = 1:max(n)) %>% 
+                       dplyr::ungroup(speech) %>% 
+                       dplyr::select(speech, line, text)
+
+literature_tidy_tbl <- tibble(text = literature_all$text) %>% 
+                       dplyr::mutate(speech = 1:length(literature_all$text),
+                                     text = str_split(text, pattern ="\\n", n = Inf)) %>%
+                       tidyr::unnest(cols = c(text)) %>% 
+                       dplyr::group_by(speech) %>% 
+                       dplyr::add_tally() %>% 
+                       dplyr::mutate(line = 1:max(n)) %>% 
+                       dplyr::ungroup(speech) %>% 
+                       dplyr::select(speech, line, text)
+
+
+peace_tidy_meta_tbl      <- left_join(peace_tidy_tbl, peace_all_meta, by = c("speech" = "count"))        
+literature_tidy_meta_tbl <- left_join(literature_tidy_tbl, literature_all_meta, by = c("speech" = "count"))        
+
+
+peace_tokenized     <- peace_tidy_meta_tbl %>% 
+                       unnest_tokens(word, text) %>% 
+                       anti_join(stop_words)
+
+literature_tokenized<- literature_tidy_meta_tbl %>% 
+                       unnest_tokens(word, text) %>% 
+                       anti_join(stop_words)
+
+# calculation:
+
+peace_mostfrequentwords50         <- frequentwordsincorpus(nobel_peace)
+literature_mostfrequentwords50    <- frequentwordsincorpus(nobel_literature)
+
+#most frequent words for prize overall through whole history
+peace_word_frequencies_topfive    <- as.character(peace_mostfrequentwords50$word[1:numberofwords])
+literature_frequencies_topfive    <- as.character(literature_mostfrequentwords50$word[1:numberofwords])
+
+#setup matrices word x decades
+peace_word_by_decades             <- compute_word_frequencies_topfive_byyear(peace_word_frequencies_topfive)
+literature_word_by_decades        <- compute_word_frequencies_topfive_byyear(literature_frequencies_topfive)
+
+#dataframe for plotting in ggvis package
+peace_word_frequencies_topfive             <- data.frame(t(peace_word_by_decades))
+peace_word_frequencies_topfive$years       <- rownames(peace_word_frequencies_topfive)
+peace_column_names                         <- c(names(peace_word_frequencies_topfive))
+literature_word_frequencies_topfive        <- data.frame(t(literature_word_by_decades))
+literature_word_frequencies_topfive$years  <- rownames(literature_word_frequencies_topfive)
+literature_column_names                    <- c(names(literature_word_frequencies_topfive))
+
+
+peace_net_sentiment_per_speech <- peace_tokenized %>%
+                                  inner_join(get_sentiments("bing")) %>%
+                                  count(speech, index = speech, sentiment) %>%
+                                  spread(sentiment, n, fill = 0) %>%
+                                  mutate(sentiment = positive - negative)
+
+literature_net_sentiment_per_speech <- literature_tokenized %>%
+                                  inner_join(get_sentiments("bing")) %>%
+                                  count(speech, index = speech, sentiment) %>%
+                                  spread(sentiment, n, fill = 0) %>%
+                                  mutate(sentiment = positive - negative)
+
+peace_net_sentiment_per_speech_meta      <- peace_net_sentiment_per_speech %>% left_join(literature_all_meta, by = c("speech" = "count"))
+literature_net_sentiment_per_speech_meta <- literature_net_sentiment_per_speech %>% left_join(peace_all_meta, by = c("speech" = "count"))
+
+##add comparison of two prizes sentiments over the yard and work out correlation. indepentend speakers but maybe 'children of their time'.
+```
+
+Why
+=====================================
+
+Quantitative analysis of nobel prize speeches in R
+
+Fun project by Raphael Gall.   
+  
+One of my favorite speeches is by [William Faulkner](http://www.nobelprize.org/nobel_prizes/literature/laureates/1949/faulkner-speech.html):    
+'[...] There is only the question: When will I be blown up? Because of this, the young man or woman writing today has forgotten *the problems of the human heart in conflict with itself* which alone can make good writing because only that is worth writing about, worth the agony and the sweat.'  
+
+I read many nobel speeches over the years. I came across the nobel prize's website by accident and was just curious to read the acceptance speeches by on the latest prize winners. Then I read the speeches in other categories, and soon I went back regulary and picked random speeches from the past, often from the 80s, 50s or the early 2000s. Even though I am interested in science, I enjoyed the literature and peace categories the most. I guess recipents felt that they had more to say than thank you. Each speech gave me a window into an era that I could relate to only through history class. However, I noticed that the annual record keeping should make it possible to see trends, so I came up with the idea of running an analysis.
+
+Analysis  
+The corpus includes all speeches in the literature and peace categories, from today to the 1940s.  
+They are publicly available [here](http://www.nobelprize.org).  
+  
+The text mining process involves:    
+* data extraction,  
+* summarisation,   
+* categorisation,  
+* clustering, and  
+* visualization.  
+
+
+
+Peace
+=====================================
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Trends over the Years
+
+```{r}
+### peace prize by decade
+peace_word_frequencies_topfive %>% 
+  ggvis(~years, ~peac) %>% 
+  layer_lines(stroke = 'peace') %>% 
+  layer_paths(y = ~world, stroke = 'world') %>% 
+  layer_paths(y = ~peopl, stroke = 'people') %>% 
+  layer_paths(y = ~will, stroke = 'will') %>% 
+  layer_paths(y = ~war, stroke = 'war') %>%
+  add_axis("x", title = "Importance of words in nobel peace prize speeches(by decade)") %>% 
+  add_axis("y", title = "Word frequency") 
+
+
+ggplot(peace_net_sentiment_per_speech_meta, aes(year, sentiment)) + #, fill = author)) +
+  geom_col(show.legend = FALSE) 
+```
+
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+### Peace Prize
+
+```{r}
+#scatterplotmatrix, drop the 'years' string
+psych::pairs.panels(peace_word_frequencies_topfive[ , - 6])
+
+
+```
+
+
+Literature
+=====================================
+
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Trends over the Years
+
+```{r}
+### literature by decade
+# literature_word_frequencies_topfive %>% 
+#   ggvis(~years, ~literature_word_frequencies_topfive[ , 1]) %>% 
+#   layer_lines(stroke = literature_column_names[1]) %>% 
+#   add_axis("x", title = "Importance of words in literature nobel prize speeches(by decades)") %>% 
+#   add_axis("y", title = "Word frequency") %>% 
+#   layer_paths(y = ~literature_word_frequencies_topfive[ , 2], stroke = literature_column_names[2]) %>% 
+#   layer_paths(y = ~literature_word_frequencies_topfive[ , 3], stroke = literature_column_names[3]) %>% 
+#   layer_paths(y = ~literature_word_frequencies_topfive[ , 4], stroke = literature_column_names[4]) %>% 
+#   layer_paths(y = ~literature_word_frequencies_topfive[ , 5], stroke = literature_column_names[5])
+
+literature_word_frequencies_topfive %>% 
+  ggvis(~years, ~one) %>% 
+  layer_lines(stroke = 'one') %>% 
+  add_axis("x", title = "Importance of words in literature nobel prize speeches(by decades)") %>% 
+  add_axis("y", title = "Word frequency") %>% 
+  layer_paths(y = ~world, stroke = 'world') %>% 
+  layer_paths(y = ~will, stroke = 'will') %>% 
+  layer_paths(y = ~can, stroke = 'can') %>% 
+  layer_paths(y = ~time, stroke = 'time')
+
+ggplot(literature_net_sentiment_per_speech_meta, aes(year, sentiment)) + #, fill = author)) +
+  geom_col(show.legend = FALSE) 
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+
+### Literature Prize
+
+```{r}
+#scatterplotmatrix, drop the 'years' string
+psych::pairs.panels(literature_word_frequencies_topfive[ , - 6])
+
+```
+

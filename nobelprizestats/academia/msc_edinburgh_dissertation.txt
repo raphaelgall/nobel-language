@@ -1,0 +1,1529 @@
+
+
+
+
+
+
+
+
+
+
+Beyond the single dimension approach of resilience and vulnerability: the effects of childhood socioeconomic status on adult educational achievement
+
+B045770
+8010 words
+MSc Psychological Research Methods
+The University of Edinburgh
+2013/2014
+
+	
+
+Acknowledgements
+I could not have asked for a better supervisor. Alexander Weiss supported me enthusiastically throughout the project. We spent many productive hours discussing interesting research questions, how to address methodological issues and overcome practical problems. He inspired me to ask myself what good research is all about and he convinced me how powerful the multiple working hypotheses approach is.
+
+I thank the whole school of school of Psychology, Philosophy and Language Sciences. Foremost, I thank all my teachers. Martin Corley, my programme director, always went the 'extra-mile' to help me and my fellow students. I thank the Postgraduate office. Toni Noble, Lynsey Buchanan and Katie Keltie are very helpful and knowledgeable. I thank Karen Fleet, the librarian, who does a great job in helping students to find good sources. I also thank the team who allows students sot work in the building around the clock. Being nocturnal, I had many good chats with the night guards after midnight. I also thank the cleaner's for keeping our facilities in great shape. Finally, god bless the kitchen facilities. I am convinced that my studies would have been miserable without the occasional cup of tea.
+
+I also thank all my new friends. I will forget most of the work that I did, but not the people I have met.
+
+Finally, I thank my girlfriend Olivia Liang. She always listened to my thoughts, engaged with my ideas and helped me to improve my writing skills. I am looking forward to many years to come.
+
+
+
+Abstract on resilience research in dissertation
+People are resilient if they achieve a positive outcome despite a situation of adversity. This research investigates resilience to childhood economic status, a key measure for poverty and adversity, in a representative sample of US adults. I address the lack of a theoretical framework and a unified definition of resilience in psychology. Specifically, I examine whether resilience is a global phenomenon that spans multiple domains of life functioning or a domain-specific phenomenon. To my knowledge, no studies to date have tested for a latent resilience factor. The first part of the study measures resilience in six aspects of life, those being educational achievement, intelligence, psychological well-being, physiological health, mental health and daily stress. I found resilience in three domains: educational achievement, intelligence and psychological well-being. However, I did not find a resilience factor. The second part of the study follows up from these findings by exploring how educational resilience is related to intelligence, psychological well-being, personality domains and maternal nurturance. I found that intelligence, personal growth (a component of psychological well-being), openness to experience and neuroticism are related to educational resilience. Ultimately, I discuss the implications of the study for theory building and recommend further research.
+
+
+
+
+Table of Contents
+Part 1: The search for a resilience factor	5
+Introduction	5
+Theoretical assumptions about the processes involved in resilience	8
+Methodology	9
+Results	12
+Descriptive statistics	12
+Associations of childhood SES	12
+Linear regressions	14
+Assessing the resilience measures	14
+Exploratory factor analysis	15
+Discussion of general resilience factor	16
+Part 2: Following-up on educational resilience	17
+Introduction	17
+Methodology	18
+Results	19
+Descriptive statistics of main relationships	19
+Associations of adult SES with individual differences	19
+Educational resilience and further tests	22
+Associations of educational resilience	22
+Discussion of educational resilience	23
+Interpretation of findings	23
+Limitations	25
+Future perspectives	26
+Conclusion	27
+References	28
+Appendix	33
+Appendix A	33
+Appendix B	34
+
+
+Part 1: The search for a resilience factor
+Introduction
+A person is resilient when a positive outcome is achieved despite adverse circumstances (S. S. Luthar, Sawyer, & Brown; Suniya S Luthar, 2003; Suniya S. Luthar, Cicchetti, & Becker, 2000; Vanderbilt-Adriance & Shaw, 2008). Psychological resilience is not a trait, such as a personality aspect, but it is a dynamic, biopsychosocial process between an individual and its environment (Fletcher & Sarkar, 2013; Olsson, Bond, Burns, Vella-Brodrick, & Sawyer, 2003; Schoon, 2006). The study of resilience is multidisciplinary by nature, because it integrates both the natural and the social sciences in order to understand how a person, a biological organism, responds and adapts to environmental stress, physiologically and mentally (Charney & Southwick, 2012; Davydov, Stewart, Ritchie, & Chaudieu, 2010). This complexity means that it is difficult to come up with a coherent theory about resilience. None currently exists beyond a base-level agreement that resilience involves two dimensions: a positive outcome, and a risk factor (Davydov et al., 2010). The literature uses resilience inconsistently (Davydov et al., 2010; Fletcher & Sarkar, 2013; Suniya S. Luthar et al., 2000). Progress in the field is currently hindered by these different, incompatible conceptualisations and terminologies of resilience (Davydov et al., 2010; Fletcher & Sarkar, 2013; S. S. Luthar et al.; Vanderbilt-Adriance & Shaw, 2008).
+In one line of research, resilience is occasionally conceptualised in general, domain-spanning ways (Kim-Cohen, Moffitt, Caspi, & Taylor, 2004; Olsson et al., 2003; Vanderbilt-Adriance & Shaw, 2008). A minority of studies have found that resilience may co-exist across multiple domains. A longitudinal study followed children based on the Hawaiian island of Kauai who were raised in high-risk environments of poverty, parental alcohol abuse, mental illness and chronic unemployment (Werner & Smith, 1992). Although many adults ended up leading unhealthy lives, by being out of work and being drug dependent, around one third remained resilient and managed to find work and live drug-free lives. However, resilient adults also tended to have more physical problems and higher somatic symptoms than low-risk individuals (peers who grew up in healthy home environments) and even high-risk, non-resilient subjects. Resilient people were also less connected to their families and did not ask for support from friends. Even those who displayed resilience in multiple domains exhibited problems.
+	Another longitudinal study assessed the influence of childhood maltreatment in a representative sample of British children (Collishaw et al., 2007). Resilient children functioned well, as their levels of personal difficulties, criminality, physical health and relationship stability actually exceeded those of non-maltreated individuals. In other words, resilient adults did not only recover, but they flourished. Yet this finding was not replicated by another representative study in the UK, which found that resilient children did not differ from non-maltreated controls in terms of mental health and educational performance (Jaffee, Caspi, Moffitt, Polo-Tomás, & Taylor, 2007). Additionally, another longitudinal study found multiple positive outcomes resilient children, including conduct problems, academic performance, social competence and psychological well-being (Masten et al., 1999). The study followed children who were exposed to stressful life events from the age of seven to 12 into adolescence and early adulthood. Hence, resilience can occur in more than one domain.
+In another line of research, resilience is usually conceptualised in a narrow, domain-specific way (S. S. Luthar et al.; Vanderbilt-Adriance & Shaw, 2008). Luthar and colleagues studied multiple domains of functioning in inner city youths extensively in several studies (Suniya S Luthar, 2003; Suniya S. Luthar, 1991, 1993, 1995). The urban environment and inner city poverty were defined as risk factors and their general conclusion is that resilience is discontinuous across domains. For instance, students with high scores in social competence often had high levels of emotional distress, as about two thirds of the resilient individuals showed an inverse relationship between domains scores (being on the upper third of one score is related to being in the lower third of the other measure) (Suniya S. Luthar, 1991).
+This finding was replicated as Luthar and colleagues found the same pattern in a prospective follow-up study (Suniya S. Luthar, 1993). Once the authors included emotional distress as an exclusion criterion for resilience, only 15% remained in the resilient category. Again, the inverse relationship between peer-rated sociability and academic performance was predicted in a 6 month follow-up study. Low anxiety scores in girls predicted low academic achievement and high levels in peer-rated social competence predicted low school performance (Suniya S. Luthar, 1995). Hence, resilience occurs in particular domains.
+Resilience comes at a cost. Various studies show that resilient individuals who show positive outcomes still suffer from covert troubles, including psychopathologies (e.g. depression, anxiety disorders, posttraumatic stress disorder) (Suniya S. Luthar, 1991, 1993), and somatic health problems (Radke-Yarrow & Brown, 1993; Werner & Smith, 1992). Resilience can be accompanied with internalising, as shown by a study on inner city youths (D'Imperio, Dubow, & Ippolito, 2000). Internalisation involves a set of behaviours, one of which is the practice of keeping problems to oneself (Kovacs & Devlin, 1998). Using urban city living as a risk factor, the study found that resilient children show higher levels of internalisation than low-risk children.
+Likewise, adolescents that overcame the anti-social behaviour they displayed in childhood showed high levels of internalising behaviour (Moffitt, Caspi, Harrington, & Milne, 2002). In addition, one third of the resilient adolescents were clinically diagnosed with either depression or anxiety problems. Their overall life functioning was also diminished, as they had low levels of education attainment and were employed in low-status jobs. Overcoming antisocial behaviour is therefore not an indicator for a full recovery.
+A different study by Anthony (1987) looked at the role of schizophrenia and depression. Children were labelled as resilient when a psychopathology that was present in one or both of their parents was not diagnosed in them. However, resilient children also showed unhealthy coping strategies and problems with intimacy. A similar study found that children without psychopathologies had a much higher rate of somatic complaints (56% compared to 21% of children in 'normal families') (Radke-Yarrow & Brown, 1993).
+On this reading, resilience is a distinct phenomenon in each domain of interest with specific domain inherent processes and mechanisms. It is a phenomenon that is possibly unrelated to (or only weakly related) to other life domains of functioning. For instance, some researchers treat cognitive resilience and psychopathological resilience as distinct forms of resilience: both are positive outcomes, but are the product of disassociated processes and mechanisms.
+In sum, many studies present resilience as a domain-specific phenomenon, which is accompanied by physiological and psychological disorders. Though resilience in multiple domains is rare, it is possible. A general understanding of resilience implies that the processes and mechanisms are homogeneous across manifestations, such as cognition, physiological and mental health. Resilience in each of the domains is simply manifested in a different proxy, but it is the same phenomenon.
+Although the selected presentation of evidence does not claim to be exhaustive, its purpose is to show that the question about the dimensionality of resilience is far from clear. I am surprised that there is consensus in the field that people do not simply ‘escape’ from risk without any consequence, so that resilience in one domain (e.g. educational achievement) comes at a cost of developing a vulnerability (e.g. emotional distress) in another domain, but the causal relationship between the two was not further examined. I suggest that the current theory on resilience fails to appreciate the significance of vulnerability as the flipside of resilience. This theory should be modified to incorporate an understanding of vulnerability and 'positive' resilience as two points along the same resilience-vulnerability continuum.
+To my knowledge, no studies to date have explicitly tested for a resilience factor. Put simply, a finding that there is a resilience factor that spans two or more domains supports the use of a general resilience term. Conversely, the lack of a common factor supports the notion of domain-specific resilience. A finding either way would enable us to develop a fuller theory of resilience to guide future research. The objective of this research is to explore and possibly specify the theoretical construct of resilience by addressing the question of whether resilience spans across multiple domains of life functioning or whether resilience occurs within a domain.
+I address this gap in part one by exploring whether a resilience factor underlies important life domains. I use childhood socioeconomic status as a risk factor for estimating several life aspects that indicate an adult’s overall well-being. This research measures six life domains in each person, those being educational achievement, intelligence, psychological well-being, physical health, mental health and daily stress. I hypothesise that a latent resilience factor explains an individual’s resilience-vulnerability scores.
+Theoretical assumptions about the processes involved in resilience
+	I assume that changes with respect to resilience are marked by somatic and mental outcomes. The fact that the field lacks a coherent theoretical framework does not prevent us from making strong assumptions about the principles that are involved in resilience. I draw on core principles of somatic health protection systems. Modern life presents people with many sources of stress, including financial strain, work, relationships with other people, disease and urbanisation. From an evolutionary perspective, it is reasonable to assume that the body has developed a limited number of in-built mechanisms to survive and cope with various stressors (Davydov et al., 2010). Although this notion is highly theoretical, it is a guiding principle to think about how an organism responds to situations of adversity and stress.
+This implies that psychological challenges are analogous to biological challenges in the way that the body has in-built mechanisms to detect and overcome a stressor. For instance, the immune system has in-built mechanisms to responds to a pathogen (Davydov et al., 2010), such as a virus or bacteria. Similarly, a biopsychosocial response eliminates or neutralises the environmental stressor. The internal processes in the person, including physiological, behavioural and psychological processes, are immediate responses to survive or adapt. Allostasis refers to the process of an organism to regain a balance by adapting accordingly to its environment through physiological, behavioural, psychological means (Chen, Miller, Lachman, Gruenewald, & Seeman, 2012; Miller et al., 2011). For instance, the cortisol is released in response to deal with an environmental stressor, which has the advantage that it activates energy by converting body reserves into glucose. However, cortisol also suppresses the immune system (McEwen & Seeman, 1999). Thus, prolonged periods of stress result in persistently raised cortisol levels, which increase the physiological vulnerability to pathogens, such as the influenza virus.
+A second example is inflammation. Inflammation is a key element of the body’s repertoire to defend itself against injuries and infections in body tissues, but it might also ‘backfire’, as it can cause auto-immune diseases or hypersensitivities, such as the allergy to hay fever (Davydov et al., 2010). Thus, adaptive responses that have short-term benefits can also have the potential to cause long-lasting and negative disturbances of somatic health. As the body is a biopsychosocial unit, the effects of adapting to an environmental stressor come at a trade-off cost that affects both the physiological and mental health of a person.
+This line of reasoning assumes that a person has a limited amount of resources to cope with a challenge. I use a linear resource model: the more resources an individual has, the better is the person’s likelihood to develop a positive outcome or competence. Indeed, one general indication in the resilience literature is that the higher the exposure to risk factors, the smaller the likelihood of achieving a positive outcome. For example, children whose parents developed a psychopathology may face the ‘double whammy’ of genetic and environmental risk factors when it comes to developing a psychopathology of their very own (Vanderbilt-Adriance & Shaw, 2008).
+Resilience and vulnerability are thus ends of the same continuum. Although I do not want to stretch this idea too far, the literature uses similar models of resources to understand resilience. The triad model of psychosocial resources bases the person’s developmental outcome on the interplay between the individual’s attributes (e.g. socioeconomic status, personality characteristics), the family environment (e.g. caring parents) and the social context (e.g. teacher support) (Masten et al., 1999). The more resources an individual has, the better is the person’s chance to overcome a challenge. The particular mechanisms that are involved in the resilience process are either innate or learned or both, which supports the notion of resilience as a biospsychosocial process.
+Overall, I remain intentionally open about the specific mechanisms and processes that facilitate resilience. Psychological resilience is expected to go hand-in-hand with physiological characteristics that either promote resilience in the first place or follow-from physiological adaptation (Davydov et al., 2010). My approach is thus inspired by the literature on allostatic load that describes wear and tear processes which result in long-lasting physiological changes that in turn indicate physical and mental health (Chen et al., 2012; Chen et al., 2011; McEwen & Seeman, 1999; Miller et al., 2011). Hence, I hypothesise that resilience comes at a cost of resources, which might show somatic and physical effects in resilient individuals. I am cautious about making this statement, as the literature on resilience is heterogeneous, and consequently not easy to summarise or compare.
+Methodology
+Participants. My sample was derived from the Midlife in US (MIDUS) sample, a representative sample of American adults. The sample size is large (N=579) and the mean age is 43.9 years (SD = 10.14, range = 25 to 72). Almost half of the subjects (48%) were male. My final sample included only people with valid responses in all variables (N=579). I excluded subjects who had missing data on one or more of the main study variables.
+Resilience. Resilience is treated as the flipside of vulnerability. For this study, I conceptualised resilience as a level of functioning that is better than predicted for that particular person based on their level of childhood socioeconomic status. I used nine linear regressions to measure the resilience-vulnerability score of each individual in each domain. The current literature recommends continuous, quantitative measures instead of using categorical or qualitative distinctions between resilience and vulnerability (Masten and Coatsworth 1998, Luthar and Cushing 2002, Kim-Cohen, Moffitt et al. 2004). In operational terms, the resilience-vulnerability continuum is measured by subtracting the predicted score from the actual score. Values above zero indicate that an individual is resilient, as the outcome is better than expected, whereas values below zero mean that an individual is vulnerable.
+Socioeconomic status. Socioeconomic status was assessed twice, once during childhood and again during adulthood. I considered childhood SES to be a composite of parental income and social prestige and measured it through self-reports which were assigned a logit score based on the Duncan Index (Hauser and Warren 1997). I ranked educational outcomes in twelve tiers, ranging from ‘no school’ to ‘graduate of a two-year college’ to ‘PhD or equivalent’. The most frequent level of education is graduation from 2 year college or an associate degree.
+Intelligence. Cognitive ability was measured through the proxy of the Intelligence Quotient (IQ). The Brief Test of Adult Cognition by Telephone (BTACT) is an inventory that assesses 5 key aspects of cognitive ability: word-list recall, backward-digit-span measure of working memory, category-fluency measure of verbal fluency, inductive reasoning measure of fluid intelligence, and a backward counting-task of processing speed (Tun and Lachman 2006). The aggregate scores were computed by summing the composite scores, which were then standardised (mean = 0, SD = 1).
+Psychological well-being. Psychological well-being was assessed with Ryff’s multidimensional scale (Ryff and Keyes 1995, Ryff 2014). The instrument is robust and has undergone psychometric scrutiny (Ryff and Keyes 1995, Keyes, Shmotkin et al. 2002, Ryff and Singer 2008). The instrument has six components (self-acceptance, purpose in life, self-mastery, positive relations with others, personal growth, autonomy), each assessed with 7 questions. I calculated an average score.
+Mental health. Mental health was assessed with three mental health scales (Watson, Weber et al. 1995). First, I used two subscales of the Mood and Symptom Questionnaire. The General Distress subscale consists of 11 items. It asks how much the participant felt things in the last week, such as 'felt uneasy', 'felt afraid', or 'was unable to relax'. Responses range from (1) not at all to (5) extremely. The Anxious Arousal subscale has 17 items. Participants self-report whether they experienced that their 'heart was racing or pounding' and they were 'short of breath' in the last week. 5-point scales were used and all responses in the two subscales were summed to a single total score.
+Second, the Depression Scale is a composite of two subscales, anhedonia and depressive affect, which consist of 6 and 7 items respectively (Wang, Berglund et al. 2000). The anhedonia scale assessed how often participants 'lost interest in most things' and 'had more trouble falling asleep than usual' in the past 12 months. In the same manner, the depressive affect scale measured how often participants felt 'no good or worthless' or if they 'thought a lot about death'. The total number of 'yes' answers is summed in a composite score. 
+	Third, the Anxiety Disorder Scale consists of 10 items (Wang, Berglund et al. 2000). Participants are asked how often they reported any symptom in the last 12 months. Questions asked whether they 'felt restless because of their worry' or 'had trouble remembering things because of their worry' or 'felt sore or ache in their muscles because of their worry'. Responses ranged from (1) most days to (4) never. The scores were based on how often 'most days' was answered.
+Physiological health. Physical health was assessed through two variables. The Number of Physical Symptoms scale measures the total number of 28 physiological complaints. Participants self-report whether they have a physical symptom, e.g. backache, joint pain or allergies (Larsen and Kasimatis 1991). The responses are summed. Serum interleukin-6 is a biomarker for inflammation. It is measured in pg/mL and assumed to be involved in the etiology of many diseases, including cardiovascular and rheumatological disorders (Morozink, Friedman et al. 2010).
+Stress. Day-to-day stress levels were measured with the 10-item Perceived Stress Scale (Roberti, Harrington et al. 2006). Participants self-report how often they felt stressed in the past month on a 5-point scale, ranging from never (1) to very often (5). It includes questions, such as 'felt nervous and stressed', 'felt unable to control the important things in your life'. All items are summed.
+Covariates. I included age and sex as demographic covariates in linear regressions. For instance, psychological well-being is known to be related to age (Ryff and Singer 2008). Including age as a predictor controls for the influence of age on the outcome variable.
+Procedure. First, I established the main associations between childhood SES and each outcome variable separately. The analysis rested on the condition that childhood SES predicts the outcome, preferably in all 6 life domains (educational attainment, intelligence, psychological well-being, physical health, mental health, and stress). Second, if and only if the necessary conditions are met, I addressed the hypothesis by testing for a latent resilience factor.
+Analysis. The analysis is split in two stages. In the first stage, I ran nine linear regressions to establish resilience-vulnerability scores for each person in each variable. In the second stage, I used exploratory factor analysis (EFA) techniques to test for a latent resilience factor. Figure 1 presents the descriptive statistics of the correlation matrix (see Appendix A). My rationale for an acceptable factor solution involves a number of aspects. First, the number of factors needed to make theoretical sense. Second, I used maximum likelihood (ML) as the estimation method, as all items are normally distributed. Third, I assessed the number of factors with eigenvalue-based and model-fit-based methods. Fourth, I defined the minimal factor loadings to be >.4. Finally, each factor had to have at least three salient loadings.
+
+Results
+Descriptive statistics
+Table 1 presents descriptive statistics of the sample.
+Table 1
+
+
+
+
+
+
+
+Descriptive Statistics
+
+
+
+
+
+
+
+Name
+Mean
+SD
+Med.
+Min
+Max
+Range
+Skew
+Kurt.
+SE
+Childhood SES
+43.63
+14.61
+45
+15
+81
+66
+ 0.23
+-0.50
+0.61
+Adult SES
+ 7.98
+ 2.44
+9
+1
+12
+11
+-0.06
+-1.14
+0.10
+Intelligence
+ 0.30
+ 0.95
+0
+-2
+3
+5
+ 0.22
+-0.04
+0.04
+Psy. well-being
+39.37
+ 5.57
+40
+18
+49
+31
+-0.74
+ 0.33
+0.23
+Physical symptoms
+ 2.36
+     2.11
+2
+0
+2
+20
+ 2.06
+10.78
+0.09
+SerumIL6
+ 2.47
+ 2.29
+2
+0
+22
+22
+ 3.56
+18.50
+0.10
+General Distress
+18.88
+  3.82
+18
+14
+48
+34
+ 1.99
+ 8.40
+0.16
+Depression
+ 0.57
+1.64
+0
+0
+7
+7
+ 2.77
+ 6.21
+0.07
+Anxiety
+ 0.08
+0.65
+0
+0
+8
+8
+ 8.71
+81.61
+0.03
+Perceived Stress levels
+21.60
+6.01
+21
+10
+48
+38
+0.63
+0.48
+0.25
+N= 579
+
+
+
+Associations of childhood SES
+The correlations between childhood SES (predictor) and life outcome domains are listed in Table 2. The linear regressions that are based on these associations are listed in Table 3. Overall, three out of nine variables are predicted by childhood SES in simple linear regressions. Adult SES is highly correlated with Childhood SES (r = .52). In a linear regression, childhood SES accounts for 26% of the variance in adult SES (multiple R² = .26). Intelligence is moderately correlated with childhood SES (r = .27). In a linear regression, childhood SES accounts for 7% of the variance in adult SES (multiple R² = .07. Psychological well-being is moderately correlated with childhood SES (r = .19). In a linear regression, childhood SES accounts for 3% of the variance in adult SES in a significant way (multiple R = .03).
+Though the other variables were mostly significant, childhood SES explained little variance in the several domains. All behavioural and anxiety measures (MASQ composite scale, depression scale, anxiety scale), physiological and biomedical measures (physical symptoms, interleukin-6 serum), and the daily life challenge measure (perceived stress) are not at all or only marginally associated with childhood SES. It is necessary that childhood SES explains variance in the outcome variable to estimate meaningful resilience-vulnerability scores. Otherwise, the residuals of the linear regressions do not reflect resilience. I therefore dropped these variables from the analysis, as the life outcomes need to be meaningfully related to childhood socioeconomic status to study resilience. I continued the analysis with educational achievement, intelligence and psychological well-being.
+Table 2
+
+
+Correlations between childhood socioeconomic status and life outcomes
+Name
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Childhood SES
+ 1
+
+
+
+
+
+
+
+
+
+Adult SES
+ .52
+ 1
+
+
+
+
+
+
+
+
+Intelligence
+ .27
+ .35
+ 1
+
+
+
+
+
+
+
+Psych. well-being
+ .19
+ .15
+ .07
+ 1
+
+
+
+
+
+
+Physical symptoms
+-.10
+-.11
+-.06
+-.20
+1
+
+
+
+
+
+SerumIL6
+-.05
+-.09
+-.05
+ .02
+-.01
+1
+
+
+
+
+General distress
+-.14
+-.08
+-.03
+-.37
+ .38
+ .01
+1
+
+
+
+Depression
+-.07
+-.07
+-.01
+-.25
+ .25
+0
+.38
+1
+
+
+Anxiety
+-.09
+-.13
+-.03
+-.20
+ .11
+-.02
+.19
+ .32
+1
+
+Perceiv. stress lev.
+-.12
+-.14
+-.10
+-.54
+ .26
+-.01
+.53
+.25
+.13
+1
+Pearson correlations
+Note.  1=Childhood SES, 2=Adult SES, 3=Intelligence, 4=Psychological well-being, 5=Physical symptoms, 6=SerumIL6, 7=General distress, 8=Depression, 9=Anxiety, 10=Perceived stress levels
+
+
+Linear regressions
+Table 3 presents the linear regression statistics.
+Table 3
+
+
+
+
+
+
+
+
+
+
+
+
+Simple regressions based on childhood socioeconomic status as a predictor
+Variable
+
+R²
+F
+df
+Variable
+
+B
+SE
+t
+p
+CI
+Adult SES
+
+.26
+69.85
+575
+Intercept
+4.43
+0.55
+7.99
+<.001***
+3.34
+5.51
+
+
+
+
+
+childhood SES
+0.09
+0.01
+14.42
+<.001***
+0.07
+0.1
+Intelligence
+.16
+56.99
+576
+Intercept
+0.74
+0.18
+4.05
+<.001***
+0.38
+1.1
+
+
+
+
+
+childhood SES
+0.02
+0
+7.03
+<.001***
+0.01
+0.02
+
+
+
+
+
+Age
+-0.03
+0
+-7.97
+<.001***
+-0.03
+-0.02
+Psychological
+.06
+17.9
+576
+Intercept
+32.58
+1.21
+26.94
+<.001***
+30.21
+34.96
+well-being
+
+
+
+
+childhood SES
+0.07
+0.02
+4.72
+<.001***
+0.04
+0.1
+
+
+
+
+
+Age
+0.08
+0.02
+3.72
+<.001***
+0.04
+0.13
+Physical
+.02
+8.29
+576
+Intercept
+2.05
+0.39
+5.25
+<.001***
+1.28
+2.81
+symptoms
+
+
+
+
+childhood SES
+-0.01
+0.01
+-2.14
+0.032*
+-0.02
+0
+
+
+
+
+
+Age
+0.58
+0.17
+3.32
+<.001***
+0.24
+0.92
+Interleukin-6
+.01
+3.44
+575
+Intercept
+1.34
+0.59
+2.25
+0.024*
+0.17
+2.5
+
+
+
+
+
+childhood SES
+-0.01
+0.01
+-1.15
+0.25
+-0.02
+0.01
+
+
+
+
+
+Age
+0.03
+0.01
+2.74
+0.0064**
+0.01
+0.04
+
+
+
+
+
+Gender
+0.23
+0.19
+1.23
+0.22
+-0.14
+0.6
+General distress
+.03
+6.14
+575
+Intercept
+20.04
+0.99
+20.24
+<.001***
+18.09
+21.98
+anxiety-
+
+
+
+
+childhood SES
+-0.03
+0.01
+-3.24
+0.0012**
+-0.06
+-0.01
+symptoms
+
+
+
+
+Age
+-0.02
+0.02
+-1.09
+0.28
+-0.05
+0.01
+
+
+
+
+
+Gender
+0.73
+0.31
+2.35
+0.0190*
+0.12
+1.35
+Depression
+.01
+4.37
+576
+Intercept
+0.34
+0.31
+1.13
+0.26
+-0.26
+0.94
+
+
+
+
+
+childhood SES
+-0.01
+0
+-1.43
+0.15
+-0.02
+0
+
+
+
+
+
+Gender
+0.34
+0.14
+2.49
+0.013*
+0.07
+0.61
+Anxiety
+
+.01
+4.9
+576
+Intercept
+0.52
+0.14
+3.63
+<.001***
+0.24
+0.81
+
+
+
+
+
+childhood SES
+0
+0
+-2.13
+0.0332*
+-0.01
+0
+
+
+
+
+
+Age
+-0.01
+0
+-2.31
+0.0213*
+-0.01
+0
+Perceived stress
+.03
+10.61
+576
+Intercept
+27.56
+1.32
+20.85
+<.001***
+24.97
+30.16
+Levels
+
+
+
+
+childhood SES
+-0.05
+0.02
+-2.94
+0.0034**
+-0.08
+-0.02
+
+
+
+
+
+Age
+-0.09
+0.02
+-3.58
+<.001***
+-0.13
+-0.04
+Notes. *p < .05. **p < .01. *** p <.001.
+
+
+Assessing the resilience measures
+	As outlined above, it is important that the residuals from the linear regressions reflect resilience. Table 4 lists the correlations between the residuals and the original raw scores of each domain. Very high correlation values are worrisome, as they indicate that the resilience score is not very different from the original measure itself, which puts the resilience measure in question.
+Table 4
+
+Correlations between residuals and raw scores
+Residual – raw score
+r²
+Adult SES
+.86
+Intelligence
+.91
+Psychological well-being
+.97
+Pearson correlations
+
+Table 4 presents the correlations between the original score and the resilience scores, based on the simple linear regressions. All these are fairly high. I note that the residual score of psychological well-being is almost identical to the raw score.
+Exploratory factor analysis
+Data adequacy. The correlation matrix is suitable for factor analysis. All three resilience scores (educational resilience, intelligence resilience and psychological well-being resilience) are normally distributed and the skew and kurtosis are small. The average correlation of the items is r = .13. The Kaiser-Meyer-Olkin (KMO) factor of .52 is just above the cut-off of .50. Bartlett’s test is significant with ?² = 44.36 (3), p < .001, thus the correlation matrix is different from the identity matrix.
+Methods for the number of factors. I used parallel analysis (PA) minimum average partial (MAP) to determine the number of factors. PA suggested 0 factors and 1 component and MAP suggested 2 factors.
+Table 5
+Exploratory factor solution on resilience-vulnerability scores
+Item
+Factor
+H²
+Education
+.52
+.27
+Intelligence
+.50
+.25
+Psychological well-being
+.14
+.02
+SS Loadings
+.54
+
+Variance explained
+.18
+
+
+Table 5 presents the exploratory factor solution on resilience.
+
+Exploratory factor analysis solution. Table 5 provides the pattern matrices of the exploratory factor solution. The proposed one factor solution does not meet the criterion of three primary factor loadings, as only two items meet the minimal factor loading of >.4. The psychological well-being item shared little common variance with the other two items. The one factor analysis solution fails to meet the conditions and criteria. I therefore conclude that I did not find a resilient factor in this analysis.
+Discussion of general resilience factor
+This analysis explores the dimensionality of the resilience construct across six life aspects of life, those being educational attainment, intelligence, psychological well-being, physical and mental health, and stress. To my knowledge, there is no study that has tested the dimensionality of the resilience construct across six domains of general life functioning. I replicated previous research, as childhood SES significantly predicts adult SES (Dubow, Huesmann et al. 2006, Conger and Donnellan 2007), intelligence (Bates, Lewis et al. 2013) and psychological well-being (Diener, Suh et al. 1999, Diener, Lucas et al. 2006, Diener 2013). Adult SES measured through the proxy of education has the strongest relationship to childhood SES, whereas intelligence is moderately and psychological well-being is weakly related. However, I could not replicate previous research that found relationships between childhood SES and physiological health (Morozink, Friedman et al. 2010, Chen, Strunk et al. 2011, Miller, Lachman et al. 2011), mental health (Conger and Donnellan 2007) and daily stress (Grzywacz, Almeida et al. 2004) in the MIDUS sample. Overall, three out of six life domains fulfil the pre-conditions of testing for a resilience factor.
+In those three domains, I did not find a latent resilience factor, although three life domains are measured and it is in principle possible to find a factor. Educational resilience and intelligence resilience share common variance with each other. It is not surprising that educational resilience and intelligence resilience are related, as prior research shows that educational achievement and intelligence are correlated (Deary and Johnson 2010). Yet it is important to note that the two domains are distinct constructs and that the causality between them is not clear (Rowe, Vesterdal et al. 1998). In addition, psychological well-being resilience shared little common variance with the other two domains. I found that the resilience scores of psychological well-being are highly similar to the original, raw scores. The effect size of childhood SES is possibly too small on adult psychological well-being. In other words, when it comes to measuring resilience, the domain of psychological well-being is possibly not enough influenced by the risk of childhood adversity. If this interpretation is correct, then it is clear that psychological well-being shared little common variance with the other two resilience measures. Therefore, I did not find a resilience factor that spans across three domains.
+However, educational resilience attracted my attention. Educational achievements are among the most critical life determinants in a person’s life in modern societies. This is because education is highly indicative of adult SES (Conger and Donnellan 2007). In turn, adult SES is a significant predictor of morbidity, life expectancy and physical and mental health and thus of particular interest for understanding why individuals achieve a positive outcome, particularly in circumstances of adversity (Conger and Donnellan 2007). From that, it follows that educational resilience is of particular interest and relevance for understanding the overall process of resilience in the broadest life-outcome terms. Although resilience research lacks a theoretical framework and conceptual definition(s) as well as operationalisation(s), I think that there is something to be learned about the phenomenon even if research is largely empirically driven. The second part of this paper follows up on educational resilience.
+Part 2: Following-up on educational resilience
+Introduction
+In Part 2, I explore how educational resilience is related to individual differences and family-wide factors. In the first part, I found that childhood SES is a strong predictor for education resilience. Here, I did not test a priori hypotheses about specific mechanisms, as I lacked a coherent theoretical framework on resilience. Instead, this research is exploratory.
+	First, I wanted to find out how over-performing and under-performing in education according to one’s childhood socioeconomic status is related to intelligence. Education and intelligence are related. For instance, measures of intelligence quotient (IQ) and total years of schooling or highest achieved qualification were highly correlated (r = .50) (Deary and Johnson 2010). Still, the causality is not clear (Rowe, Vesterdal et al. 1998). It is plausible how intelligence may cause higher educational outcomes. It is also plausible how educational training causes IQ test scores. Both arguments are supported, and it is likely that non-linear effects make the relationship even more complex (Deary and Johnson 2010). This analysis assumes both: intelligence influences education and education influences intelligence. I therefore maintained an open-mind when it came to interpreting how intelligence and educational resilience are related.
+Second, it seemed reasonable to assume a link between personality domains and educational outcomes. For example, conscientious students may find it easier to deliver school work and highly open students might be curious and thus motivated to learn more (Poropat 2009).
+Third, I also investigated the role of maternal nurturance, the only family-wide factor on this research. Kim-Cohen, Moffitt et al. (2004) found that maternal nurturing is positively related to cognitive resilience in children, but cognitive resilience is not the same as educational resilience. Former research also shows that a caring parent (mother or father) can buffer against the negative effects of poverty on educational attainment (Masten 2001, Luthar 2006). Cicchetti and Blender (2006) also found that parental care, expressed in warmth and sensitivity also shapes the response to stress in children.
+Overall, I ask three research questions. First, how is intelligence related to educational resilience? Second, how are personality dimensions related to educational resilience? Third, how is maternal nurturance related to educational resilience?
+Methodology
+Participants. I studied the MIDUS sample, a representative sample of American adults. The sample size is large (N=2219) and the mean age is 43.2 years (SD = 10.18, range = 24 to 74). Again, almost half of the subjects (48%) were male. My final sample included only people with valid responses in all variables (N=2219). I excluded subjects who had missing data on one or more of the main study variables.
+Measures. Childhood and adult socioeconomic status, intelligence and psychological well-being are measured identically to the first part.
+	Personality. Human personality domains are measured with the Five-Factor Model. Scientific consensus is that the five broad continuous domains or factors underlie the majority of human behaviour (Digman 1990). Openness to experience describes a person’s tendency to be open to new ideas and feelings versus a narrow and superficial understanding. Conscientiousness refers to their tendency to be organised rather than disorganised or lax about rules. Extraversion refers to the tendency to be outgoing in social settings rather than to stay quiet. Agreeableness refers to the tendency to be trusting rather than distrustful and independent. Neuroticism refers to the tendency to be anxious and emotionally unstable rather than peaceful and stable. The personality traits are measured through self-reporting. Each dimension is described by four to seven adjectives. For instance, extraversion is described with the adjective 'outgoing', which is self-rated on a 4-point scale, ranging from a lot (1) to not all (4).
+	Maternal warmth. Maternal warmth is assessed with an instrument developed by Rossi (2001). The scale contained three questions about the quality of the relationship between the participant and their mother during childhood. It asked questions, such as 'How much time and attention did she give you when you needed it?'. The responses to the 3 self-reported items were averaged.
+Potential covariates. Age and sex are treated as covariates, similar to part one.
+Analysis. First, I made a correlation matrix for all variables. Second, I used a linear regression model to predicted adult SES on the basis of childhood SES. The residuals of this linear regression are the deviants of the norm, i.e. expected outcome on the SES adult dimension. Positive scores are better than expected (i.e. over-performers) and negative scores are worse than expected (i.e. under-performers) based on their childhood SES. Third, I correlated the residuals cases with the individual differences variables (intelligence, personality dimension and maternal nurturance). Fourth, I regressed the off-diagonal cases on intelligence, personality dimensions and maternal nurturance. Finally, I adjusted for the influence of intelligence in some variables.
+
+Results
+Descriptive statistics of main relationships
+The descriptive statistics of all variables are listed in Table 6.
+Table 6
+Descriptive statistics
+
+
+
+
+
+
+
+
+Variable
+Mean
+SD
+Median
+Min
+Max
+Range
+Skew
+Kurtosis
+SE
+Childhood SES
+42.52
+14.45
+43.26
+9.56
+80.53
+70.97
+0.29
+-0.40
+0.31
+Adult SES
+7.69
+2.48
+8.00
+1.00
+12.00
+11.00
+0.07
+-1.02
+0.05
+Age
+43.21
+10.18
+43.00
+24.00
+74.00
+50.00
+0.35
+-0.34
+0.22
+Intelligence
+0.24
+0.94
+0.22
+-2.81
+3.64
+6.45
+0.07
+-0.18
+0.02
+Openness to
+experience
+2.93
+0.53
+3.00
+1.00
+4.00
+3.00
+-0.16
+-0.27
+0.01
+Conscientiousness
+3.42
+0.45
+3.40
+1.00
+4.00
+3.00
+-0.74
+0.37
+0.01
+Extraversion
+3.11
+0.57
+3.20
+1.00
+4.00
+3.00
+-0.38
+-0.33
+0.01
+Agreeableness
+3.41
+0.51
+3.60
+1.00
+4.00
+3.00
+-0.72
+-0.11
+0.01
+Neuroticism
+2.07
+0.62
+2.00
+1.00
+4.00
+3.00
+0.46
+0.00
+0.01
+Psychological
+well-being
+38.83
+5.74
+39.67
+17.00
+49.00
+32.00
+-0.69
+0.10
+0.12
+- Self-acceptance
+38.39
+8.12
+40.00
+7.00
+49.00
+42.00
+-0.86
+0.34
+0.17
+- Purpose in life
+39.30
+6.64
+40.00
+10.00
+49.00
+39.00
+-0.67
+-0.02
+0.14
+- self-mastery
+38.35
+7.26
+39.00
+8.00
+49.00
+41.00
+-0.59
+0.00
+0.15
+- Pos. relations with others
+40.54
+6.92
+42.00
+14.00
+49.00
+35.00
+-0.78
+-0.01
+0.15
+- Autonomy
+37.19
+6.96
+38.00
+10.00
+49.00
+39.00
+-0.34
+-0.24
+0.15
+- Personal growth
+39.22
+6.69
+40.00
+11.00
+49.00
+38.00
+-0.70
+0.19
+0.14
+Maternal
+nurturance
+3.12
+0.47
+3.19
+0.99
+3.99
+3.00
+-0.84
+0.72
+0.01
+N=2229
+
+
+
+
+
+
+
+
+
+Associations of adult SES with individual differences
+The main associations of childhood SES are listed in Table 7. Childhood SES is significantly correlated with adult SES (r = .56).
+Intelligence is moderately related to adult SES (r = .37) and childhood SES (r = .32). Intelligence accounts for 15% of the variance in adult SES in a linear regression (multiple R2 = .15).
+The average score of psychological well-being is weakly related to adult SES (average r = .15). The component on positive relations with others is the least related (r = .04) with adult SES, while the personal growth composite has strongest relationship (r = .21).
+Openness to experience is moderately related to adult SES (r = .19), while neuroticism (r = -.09), agreeableness (r = -.06) and conscientiousness (r = .06) are weakly related. Extraversion (r = -.03) is marginally related to adult SES. Maternal nurturance is marginally related to adult SES (r = -.02).
+Table 7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Correlations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Variable
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+Childhood SES
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Adult SES
+.56
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Intelligence
+.33
+.39
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+Openness to experience
+.15
+.20
+.09
+1
+
+
+
+
+
+
+
+
+
+
+
+
+Conscientiousness
+.07
+.06
+.05
+.28
+1
+
+
+
+
+
+
+
+
+
+
+
+Extraversion
+-.02
+-.03
+-.04
+.5
+.21
+1
+
+
+
+
+
+
+
+
+
+
+Agreeableness
+-.09
+-.06
+-.07
+.32
+.25
+.49
+1
+
+
+
+
+
+
+
+
+
+Neuroticism
+-.06
+-.09
+-.03
+-.22
+-.18
+-.18
+-.11
+1
+
+
+
+
+
+
+
+
+Psychological well-being
+.16
+.15
+.08
+.47
+.41
+.51
+.3
+-.49
+1
+
+
+
+
+
+
+
+- Self-acceptance
+.18
+.14
+.06
+.37
+.32
+.43
+.21
+-.46
+.89
+1
+
+
+
+
+
+
+- Purpose in life
+.18
+.16
+.11
+.36
+.38
+.38
+.24
+-.33
+.82
+.7
+1
+
+
+
+
+
+- Self-mastery
+.11
+.10
+.03
+.34
+.39
+.4
+.2
+-.52
+.86
+.76
+.65
+1
+
+
+
+
+- Pos. relations with others
+.05
+.04
+.02
+.3
+.28
+.49
+.46
+-.36
+.79
+.65
+.59
+.62
+1
+
+
+
+- Autonomy
+.07
+.07
+.01
+.39
+.28
+.31
+.07
+-.33
+.67
+.52
+.39
+.51
+.37
+1
+
+
+- Personal growth
+.18
+.21
+.13
+.52
+.35
+.45
+.29
+-.35
+.81
+.65
+.67
+.59
+.58
+.45
+1
+
+Maternal nurturance
+-.03
+-.02
+-.04
+.08
+.12
+.18
+.13
+-.08
+.16
+.14
+.14
+.14
+.18
+.09
+.07
+1
+Note. 1= Childhood SES, 2= Adult SES, 3= Intelligence, 4= Openness to experience, 5= Conscientiousness, 6= Extraversion, 7 = Agreeableness, 8= Neuroticism, 9= Psychological well-being, 10= Self-acceptance, 11= Purpose in life, 12= Self-mastery, 13= Pos. relations with others, 14= Autonomy, 15= Personal growth, 16= Maternal nurturance
+Pearson correlations
+
+
+
+Educational resilience and further tests
+	In a linear regression, childhood SES explained 32% of the variance in adult SES (see Table 8). I tested for an interaction between intelligence and childhood SES on adult SES. In multiple regressions, childhood SES and intelligence together accounted for 36% of the variance in adulthood (multiple R=.36, increasing the variance that is accounted by childhood SES alone by 5%). The interaction was not significant (b= -.0037, p = .232).
+I confirmed that intelligence influences the effect of childhood SES on adult SES. Based on past research, I knew that intelligence and education are interrelated (Deary and Johnson 2010). Intelligence accounts for 15% of the variance in adult SES in a linear regression. I controlled for intelligence by regressing adult SES on childhood SES. After controlling for intelligence, childhood SES accounted for 22% of variance in adult SES (multiple R² = .21). The decrease in explained variance showed that intelligence confounds the effects on adult SES.
+Table 8
+
+
+
+
+
+
+
+
+
+
+
+Simple Regression Based on Childhood Socioeconomic Status as a Predictor
+
+
+Domain
+R²
+F
+df
+Variable
+B
+SE
+t
+p
+CI
+Adult SES
+.32
+1030
+2227
+Intercept
+3.58
+ 0.14
+26.47
+<.001***
+3.31
+3.84
+
+
+
+
+childhood SES
+0.096
+0.003
+32.09
+<.001***
+0.09
+0.10
+Notes: *p < .05. **p < .01. *** p <.001.
+
+
+
+
+
+
+
+Associations of educational resilience
+The main associations of educational resilience with individual differences scores are presented in Table 9. Intelligence is moderately related to educational resilience (r = .24). In a linear regression, intelligence accounts for 6% of the variance in educational resilience (multiple R = .06).
+Psychological well-being is weakly related to educational resilience (r = .07). Among the components of psychological well-being, personal growth has the highest relationship with educational resilience (r = .13).
+Some personality domains are related to educational resilience. Openness to experience is positively related to educational resilience (r = .14). Neuroticism is negatively related to educational resilience (r = -.07). Conscientiousness (r = .03), extraversion (r = -.02) and agreeableness (r = -.01) are very weakly related to educational resilience. Maternal nurturance is not related to educational resilience (r = .00).
+
+Table 9
+
+Correlations with educational resilience
+Variable name
+r²
+Intelligence
+ .24
+Openness to experience
+ .14
+Conscientiousness
+ .03
+Extraversion
+-.02
+Agreeableness
+-.01
+Neuroticism
+-.07
+Psychological well-being
+ .07
+- Self-acceptance
+ .04
+- Purpose in life
+ .06
+- Self-mastery
+ .04
+- Pos. relations with others
+ . 01
+- Autonomy
+ .03
+- Personal Growth
+ .13
+Maternal nurturance
+   0
+Pearson correlations
+
+
+Discussion of educational resilience
+The second part of this analysis explored how educational resilience is related to individual differences in intelligence, personality domains and the family specific factor of maternal nurturance in US adults. Using childhood socioeconomic status as a risk factor for predicting adult educational achievement, I operationalised the off-diagonal individuals as over-performers (resilient) or underperformers (vulnerable). I used correlations and linear regression techniques to understand the patterns of association between educational resilience with the above mentioned factors. My first main finding is that intelligence is moderately related to educational resilience, which is consistent with former research. Second, I found that psychological well-being is weakly related to educational resilience. Third, however, personal growth which is a subcomponent of psychological well-being is moderately related to educational resilience. Fourth, openness to experience and neuroticism are the only personality domains that are related to educational resilience, while extraversion, agreeableness and conscientiousness are not. Ultimately, maternal nurturance is not related to educational resilience. Overall, my findings are consistent with other research conducted in educational resilience in some, but not all aspects.
+Interpretation of findings
+Intelligence is probably one of the key factors for understanding educational resilience. The regression technique showed that intelligence confounds the effect of childhood SES on the educational outcome, called adult SES. As stated in the introduction I made two assumptions about the causal relationships between education and intelligence, which are compatible with each other, but which differ in their focus or level prioritisation. First, intelligence promotes educational achievements. Second, educational training enhances intelligence. As all variables are measured at a single time point and as this research design is cross-sectional, it does not allow for explicit tests of causality.
+For reasons of space, I discuss two plausible interpretations of the causal relationship between intelligence and educational resilience only briefly. First, higher intelligence might cause educational resilience, as brighter children get more and longer schooling and thereby achieve ultimately a higher educational outcome as adults. According to the intelligence based interpretation, the effect of childhood SES on adult education is thereby confounded by intelligence. Alternatively, factors that cause prolonged schooling, i.e. educational resilience, influence the development of intelligence. The schooling-based interpretation would state that the effect of childhood SES on adult SES is not confounded by intelligence, but that intelligence is an(other) outcome of educational resilience. I agree with Deary and Johnson (2010) that probably both interpretations explain part of the complex and dynamic process of developing intelligence and achieving educational outcomes. For instance, Bates, Lewis et al. (2013) showed that parental SES amplifies the development of intelligence in the MIDUS sample. Overall, other study designs, such as longitudinal studies, should investigate how intelligence is related to educational resilience.
+Psychological well-being is weakly related to socioeconomic status in adults, which is in line with previous research conducted in industrialised societies. Nevertheless, psychological well-being is more related to educational achievement when the whole sample is measured relative to the educational-resilient subsample. The relationship dropped by half, i.e. being and overachiever or underachiever is less related to psychological well-being. Thus, educational resilience is less an indicator for higher well-being than general adult SES. I speculate that educational resilience potentially comes at a cost of psychological well-being. In addition, personal growth has the strongest relationship to educational resilience among all six components of Ryff’s scale of psychological well-being. Similar to intelligence, the causal relationship with educational resilience is not clear. Further research should examine whether personal growth is a consequence of educational resilience or whether the belief system of growth caused the positive educational outcome. A third, confounding, variable might explain the relationship. Hence, psychological well-being might play a role in educational resilience and future studies are needed to test the causal relationship.
+	Personality is less related to educational resilience than I expected from previous research. Openness to experience is the strongest personality trait that is related to educational resilience, a finding which is well-supported in the literature. It is plausible that curiosity and the willingness to engage with new ideas and beliefs promote education, for example, through intrinsic motivation. In addition, it is plausible that extraverted individuals have more contact with others, through which they are exposed to more educational and stimulating opportunities and attract further support and resources from their environment. However, extraversion is not related to educational resilience. (Kim-Cohen, Moffitt et al. 2004) found that cognitive resilience to SES disadvantage in children is related to outgoing temperament, a combination of openness to experience and extraversion. They based this relationship on the previous finding that an outgoing temperament is characterised by interactions with novel tasks and unknown adults, which in turn is related to skills and abilities (Caspi, Henry et al. 1995). In addition, the outgoing, sociable temperaments of some resilient children were interpreted as a moderating factor of stress and behavioural problems (Werner and Smith 1992). In my study, openness to experience is related to educational resilience, but extraversion is not.
+I expected a stronger relationship with neuroticism, as emotional distress is positively related to educational resilience in high school (Luthar 1991), which is well-supported (Luthar 1993, Luthar 1995). My study does not indicate a substantial role of neuroticism in educational resilience. One difference between Luthar (1991) and her colleagues’ work and my study is that I used a cumulative measure instead of a targeted psychological stress measure.
+Finally, agreeableness and conscientiousness are not associated with educational resilience. The recent meta-analysis on the relationship between personality domains and educational achievement by Poropat (2009) shows significant correlations with agreeableness, conscientiousness and openness to experience. However, I have no explanation why agreeableness is not related to educational resilience. In addition, my research contradicts the well supported finding that conscientiousness is a strong predictor of academic achievement. Poropat (2009) found that conscientiousness explained as much variance as intelligence on the tertiary level when the effects of secondary level are controlled for. Thus, the marginal role of conscientiousness on educational resilience is puzzling.
+	To my surprise, the family-wide factor of maternal nurturance is unrelated to educational resilience. Previous work by (Kim-Cohen, Moffitt et al. 2004) found that maternal nurturance is positively related to cognitive resilience in children that are exposed to SES disadvantages (r = .10, p <.001). Moreover, Miller, Lachman et al. (2011) found that maternal nurturance buffered the negative effects of childhood disadvantage on health outcomes in the MIDUS sample. The authors found that maternal nurturance mediated the negative effect of childhood SES on physical problems caused by metabolic syndrome, which is inversely related to SES. Hence, unlike previous research on resilience, educational resilience is not related to maternal in my study.
+Limitations
+This research has four limitations that are worth discussing. First, the cross-sectional research design allows for the exploration of correlations and patterns of association, but not explicit tests of causal relationships. Although I assume causal relationships, I treat this as an opportunity for engaging with the subject rather than making definite claims.
+Second, the strength of the MIDUS sample is that it is representative for the adult population in the US and the whole spectrum of SES is measured, but most resilience studies that are used in this discussion only use low SES populations or study children instead of adults. Thus, there is a question as to whether the same underlying processes are at play and whether the comparisons are justified.
+Third, the validity of the instrument that assesses maternal nurturance is not guaranteed, as it is based on three questions instead of the full 7-question inventory. The failure to use the whole inventory is based on the practical problem of identifying the variable in the vast dataset, which could not be overcome in the limited amount of time, as the MIDUS administrators did not respond to my inquiry. However, the inventories’ validity is not necessarily diminished, as the correlations with psychological well-being and the personality domains looked reasonable.
+Fourth, although this research focuses on the individual differences to explain educational resilience, it does not address the societal environment and bigger trends that potentially influence educational resilience. For instance, social policies on schooling are likely to influence educational outcomes.
+Future perspectives
+	Research on educational resilience should be continued in three directions. First, it is important to explore what causes educational resilience. Study designs that allow researchers to disentangle genetic from environmental influences, such as classical twin designs, should provide further guidance. For instance, if additive genetic effects play a high role in explaining educational resilience, then it is likely that individual characteristics explain the finding. Conversely, high unique environmental effects would highlight the importance of understanding environmental factors during childhood. It is not necessary to run advanced techniques from behavioural genetics to distinguish between genetic and environmental effects. For instance, the twins can be compared on the phenotypic level and difference scores can be used as dummy variables to predict educational resilience in linear regression models.
+	Second, the various unresolved relationships between educational resilience and the variables that are used in this study need to be further examined. For instance, it is important to understand the causality between intelligence and educational resilience. I am aware that this is one of main enterprises in the psychology of individual differences and that this matter is not likely to be resolved soon. However, longitudinal study designs might address questions like these, as they provide limited insight into causality. To illustrate, the relationship between personal growth and educational resilience could be further examined by using personal growth as a predictor for prospective educational achievements.
+	Third, the development of a theory of resilience would be helped by a greater understanding how educational resilience is related to other forms of resilience, such as cognitive resilience, emotional resilience and behavioural resilience. Trends, commonalities and differences across these domain-related resiliences would facilitate theory-building on resilience.
+	Ultimately, the dimensionality of resilience is still unresolved. In the first part of the analysis I did not find a resilience factor. However, as the test was only based on three instead of six life aspects, the hypothesis about a resilience factor is not yet falsified. It is necessary to measure resilience in each of the key domains in the first place, those being physiological health, mental health, and stress. Unless this is achieved, the evidence about a resilience factor remains inconclusive. I see two possible strategies of addressing the issue of multidimensional resilience.
+	First, the problem of establishing resilience measures across multiple domains could be overcome by using a stricter risk variable in the future. Researchers could use more conservative operationalisations of socioeconomic disadvantage, such as including questions about the perceived financial strain in addition to the objective measure of income. Some studies explicitly included information about governmental benefit support schemes during childhood in their composite of childhood SES disadvantage. Alternatively, researchers could look for an alternative predictor. However, socioeconomic status has the advantage that it spans many aspects of life, which is a requirement that not many variables fulfil.
+	Second, the re-analysis or replication of former studies could test for the friction between two domains. For instance, testing for a factor between resilience in one domain (e.g. educational achievement) and vulnerability in other domains (e.g. emotional distress) would provide insights into the underlying causal relationship. Factor analysis techniques could be used. The findings would be in particular robust when each domain is measured with at least three instruments that are independent of each other.
+Conclusion
+	The primary goal of this analysis was to test the dimensionality of resilience in adults who grew up in an environment of adversity based on their socioeconomic status. My review of the field highlights the inconsistent definitions of resilience as either a global phenomenon that spans multiple domains of life functioning or a domain-specific phenomenon. This research contributes new information to the field, as to my knowledge it is the first to test for a resilience factor. Although I did not find a resilience factor, the results in this analysis do not conclusively rule out the possibility that resilience processes occur across multiple domains.
+	The secondary goal of the study was to explore how educational resilience is related to intelligence, personality domains and maternal nurturance. Educational resilience is related to intelligence, openness to experience, neuroticism and personal growth (a component of psychological well-being). Further research is necessary to understand the causality of educational resilience in particular and the resilience construct in general. Ultimately, I hope that resilience research will inform policy-making to address social inequalities and promote the well-being of future generations.
+
+References
+Anthony, E James. (1987). Children at high risk for psychosis growing up successfully.
+Bates, T. C., et al. (2013). "Childhood Socioeconomic Status Amplifies Genetic Effects on Adult Intelligence." Psychological Science.
+Carpentieri, Sarah C, Mulhern, Raymond K, Douglas, Susan, Hanna, Soheil, & Fairclough, Diane L. (1993). Behavioral resiliency among children surviving brain tumors: A longitudinal study. Journal of Clinical Child Psychology, 22(2), 236-246.
+Caspi, A., et al. (1995). "Temperamental origins of child and adolescent behavior problems: From age three to age fifteen." Child Development 66(1): 55-68.
+Cicchetti, D. and J. A. Blender (2006). "A Multiple-Levels-of-Analysis Perspective on Resilience." Annals of the New York Academy of Sciences 1094(1): 248-258.
+Charney, Dennis S., & Southwick, Steven M. (2012). Resilience [electronic resource] : The Science of Mastering Life's Greatest Challenges / Steven M. Southwick, Dennis S. Charney: Cambridge : Cambridge University Press, 2012.
+Chen, Edith, Miller, Gregory E, Lachman, Margie E, Gruenewald, Tara L, & Seeman, Teresa E. (2012). Protective factors for adults from low-childhood socioeconomic circumstances: The benefits of shift-and-persist for allostatic load. Psychosomatic Medicine, 74(2), 178-186.
+Chen, Edith, Strunk, Robert C., Trethewey, Alexandra, Schreier, Hannah M. C., Maharaj, Nandini, & Miller, Gregory E. (2011). Resilience in low-socioeconomic-status children with asthma: Adaptations to stress. Journal of Allergy and Clinical Immunology, 128(5), 970-976. doi: http://dx.doi.org/10.1016/j.jaci.2011.06.040
+Conger, R. D. and M. B. Donnellan (2007). "An interactionist perspective on the socioeconomic context of human development." Annu. Rev. Psychol. 58: 175-199.
+Coie, John D, & Jacobs, Marlene R. (1993). The role of social context in the prevention of conduct disorder. Development and Psychopathology, 5(1-2), 263-275.
+Collishaw, Stephan, Pickles, Andrew, Messer, Julie, Rutter, Michael, Shearer, Christina, & Maughan, Barbara. (2007). Resilience to adult psychopathology following childhood maltreatment: Evidence from a community sample. Child Abuse & Neglect, 31(3), 211-229. doi: http://dx.doi.org/10.1016/j.chiabu.2007.02.004
+D'Imperio, Rhonda L., Dubow, Eric F., & Ippolito, Maria F. (2000). Resilient and Stress-Affected Adolescents in an Urban Setting. Journal of Clinical Child Psychology, 29(1), 129-142. doi: 10.1207/S15374424jccp2901_13
+Davydov, Dmitry M., Stewart, Robert, Ritchie, Karen, & Chaudieu, Isabelle. (2010). Resilience and mental health. Clinical Psychology Review, 30(5), 479-495. doi: 10.1016/j.cpr.2010.03.003
+Deary, I. J. and W. Johnson (2010). "Intelligence and education: causal perceptions drive analytic processes and therefore conclusions." International Journal of Epidemiology 39(5): 1362-1369.
+Diener, E. (2013). "The Remarkable Changes in the Science of Subjective Well-Being." Perspectives on Psychological Science (Sage Publications Inc.) 8(6): 663-666.
+Diener, E., et al. (2006). "Beyond the hedonic treadmill: revising the adaptation theory of well-being." American Psychologist 61(4): 305.
+Diener, E., et al. (1999). "Subjective well-being: Three decades of progress." Psychological bulletin 125(2): 276.
+Digman, J. M. (1990). "Personality structure: Emergence of the five-factor model." Annual review of psychology 41(1): 417-440.
+Dubow, E. F., et al. (2006). "Middle childhood and adolescent contextual and personal predictors of adult educational and occupational outcomes: a mediational model in two countries." Developmental psychology 42(5): 937.
+Fischer, Kurt W. (1980). A theory of cognitive development: The control and construction of hierarchies of skills. Psychological review, 87(6), 477.
+Fletcher, David, & Sarkar, Mustafa. (2013). Psychological Resilience: A Review and Critique of Definitions, Concepts, and Theory (English). European psychologist, 18(1), 12-23.
+Grzywacz, J. G., et al. (2004). "Socioeconomic Status and Health: A Micro-level Analysis o Exposure and Vulnerability to Daily Stressors." Journal of Health and Social Behavior 45(1): 1-16.
+Jaffee, Sara R., Caspi, Avshalom, Moffitt, Terrie E., Polo-Tomás, Monica, & Taylor, Alan. (2007). Individual, family, and neighborhood factors distinguish resilient from non-resilient maltreated children: A cumulative stressors model. Child Abuse & Neglect, 31(3), 231-253. doi: http://dx.doi.org/10.1016/j.chiabu.2006.03.011
+Hauser, R. M. and J. R. Warren (1997). "Socioeconomic indexes for occupations: A review, update, and critique." Sociological methodology 27(1): 177-298.
+Keyes, C. L., et al. (2002). "Optimizing well-being: the empirical encounter of two traditions." Journal of personality and social psychology 82(6): 1007.
+Kim-Cohen, Julia, Moffitt, Terrie E., Caspi, Avshalom, & Taylor, Alan. (2004). Genetic and Environmental Processes in Young Children's Resilience and Vulnerability to Socioeconomic Deprivation, 651.
+Kline, Bruce E, & Short, Elizabeth B. (1991). Changes in emotional resilience: Gifted adolescent females. Roeper Review, 13(3), 118-121.
+Kovacs, Maria, & Devlin, Bernie. (1998). Internalizing disorders in childhood. Journal of Child Psychology and Psychiatry, 39(1), 47-63.
+Larsen, R. J. and M. Kasimatis (1991). "Day-to-Day Physical Symptoms: Individual Differences in the Occurrence, Duration, and Emotional Concomitants of Minor Daily Illnesses." Journal of Personality 59(3): 387-423.
+Luthar, S. S., Sawyer, J. A., & Brown, P. J. Conceptual issues in studies of resilience - Past, present, and future research.
+Luthar, Suniya S. (2003). Resilience and vulnerability: Adaptation in the context of childhood adversities: Cambridge University Press.
+Luthar, Suniya S, Doernberger, Carol H, & Zigler, Edward. (1993). Resilience is not a unidimensional construct: Insights from a prospective study of inner-city adolescents. Development and Psychopathology, 5(04), 703-717.
+Luthar, Suniya S. (1991). Vulnerability and Resilience: A Study of High-Risk Adolescents. Child Development, 62(3), 600-616. doi: 10.1111/j.1467-8624.1991.tb01555.x
+Luthar, Suniya S. (1993). Methodological and Conceptual Issues in Research on Childhood Resilience. Journal of Child Psychology and Psychiatry, 34(4), 441-453. doi: 10.1111/j.1469-7610.1993.tb01030.x
+Luthar, Suniya S. (1995). Social Competence in the School Setting: Prospective Cross-Domain Associations among Inner-City Teens. Child Development, 66(2), 416-429. doi: 10.1111/j.1467-8624.1995.tb00880.x
+Luthar, Suniya S., Cicchetti, Dante, & Becker, Bronwyn. (2000). The Construct of Resilience: A Critical Evaluation and Guidelines for Future Work, 543.
+Luthar, S. S. and G. Cushing (2002). Measurement issues in the empirical study of resilience. Resilience and Development, Springer: 129-160.
+Luthar, S. S. (2006). "Resilience in development: A synthesis of research across five decades."
+Masten, Ann S, Hubbard, Jon J, Gest, Scott D, Tellegen, Auke, Garmezy, Norman, & Ramirez, Marylouise. (1999). Competence in the context of adversity: Pathways to resilience and maladaptation from childhood to late adolescence. Development and psychopathology, 11(01), 143-169.
+Masten, A. S. (2001). "Ordinary magic: Resilience processes in development." American Psychologist 56(3): 227.
+Masten, A. S. and J. D. Coatsworth (1998). "The development of competence in favorable and unfavorable environments: Lessons from research on successful children." American Psychologist 53(2): 205.
+McEwen, Bruce S., & Seeman, Teresa. (1999). Protective and Damaging Effects of Mediators of Stress: Elaborating and Testing the Concepts of Allostasis and Allostatic Load. Annals of the New York Academy of Sciences, 896(1), 30-47. doi: 10.1111/j.1749-6632.1999.tb08103.x
+Miller, Gregory E., Lachman, Margie E., Chen, Edith, Gruenewald, Tara L., Karlamangla, Arun S., & Seeman, Teresa E. (2011). Pathways to Resilience: Maternal Nurturance as a Buffer Against the Effects of Childhood Poverty on Metabolic Syndrome at Midlife. Psychological Science (Sage Publications Inc.), 22(12), 1591-1599.
+Moffitt, Terrie E., Caspi, Avshalom, Harrington, Honalee, & Milne, Barry J. (2002). Males on the life-course-persistent and adolescence-limited antisocial pathways: Follow-up at age 26 years. Development and Psychopathology, 14(01), 179-207. doi: doi:null
+Morozink, J. A., et al. (2010). "Socioeconomic and psychosocial predictors of interleukin-6 in the MIDUS national sample." Health Psychology 29(6): 626.
+Olsson, Craig A., Bond, Lyndal, Burns, Jane M., Vella-Brodrick, Dianne A., & Sawyer, Susan M. (2003). Adolescent resilience: a concept analysis (English). Journal of adolescence, 26(1), 1-11.
+Poropat, A. E. (2009). "A meta-analysis of the five-factor model of personality and academic performance." Psychological bulletin 135(2): 322.
+Radke-Yarrow, Marian, & Brown, Earnestine. (1993). Resilience and vulnerability in children of multiple-risk families. Development and Psychopathology, 5(04), 581-592.
+Roberti, J. W., et al. (2006). "Further psychometric support for the 10-Item Version of the Perceived Stress Scale." Journal of College Counseling 9(2): 135-147.
+Rowe, D. C., et al. (1998). "Herrnstein's syllogism: Genetic and shared environmental influences on IQ, education, and income." Intelligence 26(4): 405-423.
+Ryff, C. D. (2014). "Psychological Well-Being Revisited: Advances in the Science and Practice of Eudaimonia." Psychotherapy and psychosomatics 83(1): 10-28.
+Ryff, C. D. and C. L. M. Keyes (1995). "The structure of psychological well-being revisited." Journal of personality and social psychology 69(4): 719.
+Ryff, C. D. and B. H. Singer (2008). "Know thyself and become what you are: A eudaimonic approach to psychological well-being." Journal of Happiness Studies 9(1): 13-39.
+Rutter, Michael. (2000). Resilience Reconsidered: Conceptual Considerations, Empirical Findings, and Policy Implications
+Handbook of Early Childhood Intervention: Cambridge University Press.
+Schoon, Ingrid. (2006). Risk and Resilience [electronic resource] : Adaptations in Changing Times / Ingrid Schoon: Cambridge : Cambridge University Press, 2006.
+Tun, P. A. and M. E. Lachman (2006). "Telephone assessment of cognitive function in adulthood: the Brief Test of Adult Cognition by Telephone." Age and Ageing 35(6): 629-632.
+Vanderbilt-Adriance, Ella, & Shaw, Daniel. (2008). Conceptualizing and Re-Evaluating Resilience Across Levels of Risk, Time, and Domains of Competence. Clinical Child & Family Psychology Review, 11(1/2), 30-58. doi: 10.1007/s10567-008-0031-2
+Wang, P. S., et al. (2000). "Recent care of common mental disorders in the United States." Journal of General Internal Medicine 15(5): 284-292.
+Wang, Margaret C, & Gordon, Edmund W. (1994). Educational resilience in inner-city America: Challenges and prospects: Routledge.
+Watson, D., et al. (1995). "Testing a tripartite model: I. Evaluating the convergent and discriminant validity of anxiety and depression symptom scales." Journal of abnormal psychology 104(1): 3.
+Werner, Emmy E, & Smith, Ruth S. (1992). Overcoming the odds: High risk children from birth to adulthood: Cornell University Press.
+Appendix
+Appendix A
+Descriptive statistics of the resilience-vulnerability scores of the domains adult socioeconomic status, intelligence and psychological well-being.
+
+Figure 1: The scatterplot of matrices shows bivariate scatter plots, histograms and Pearson correlations of the resilience-vulnerability scores of the domains adult socioeconomic status, intelligence and psychological well-being.
+
+Appendix B
+Figures and diagnostics of the linear regression model on educational resilience: adult socioeconomic status predicted by childhood socioeconomic status.
+
+

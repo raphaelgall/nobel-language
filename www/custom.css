@@ -1,0 +1,37 @@
+/* Nobel Prize Speech Explorer - Custom Styles */
+
+/* Speech text display */
+.speech-text {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* Chat message bubbles */
+.chat-user {
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 15px;
+  max-width: 80%;
+  margin-left: auto;
+}
+
+.chat-assistant {
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  padding: 10px 15px;
+  max-width: 80%;
+}
+
+/* Search highlight */
+mark {
+  background-color: #fff3cd;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+/* Card spacing */
+.card + .card {
+  margin-top: 1rem;
+}
