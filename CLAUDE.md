@@ -60,6 +60,11 @@ Rscript -e "shiny::runApp()"
 - **Pre-computed data**: word frequencies and decade summaries stored in SQLite for instant queries
 - **FTS5 search**: full-text search with snippet extraction and ranking
 
+## Outstanding Items
+
+- **Decade summaries not generated**: The "Decade Trends" tab and "Ask Claude" chat require an Anthropic API key (`ANTHROPIC_API_KEY`). This is separate from the Claude Max plan — sign up at https://console.anthropic.com, add billing, create a key, and add `ANTHROPIC_API_KEY=sk-ant-...` to `.Renviron`. Then run `Rscript build/build_decade_summaries.R`.
+- **Han Kang 2024 lecture**: Not yet published on nobelprize.org (returns 404). Re-run `build/download_missing_speeches.R` once available.
+
 ## Additional Documentation
 
 Check these files when working on relevant topics:
