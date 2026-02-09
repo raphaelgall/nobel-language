@@ -1,5 +1,3 @@
-# Module: Browse Speeches tab
-
 speech_browser_ui <- function(id) {
   ns <- NS(id)
 
@@ -37,16 +35,14 @@ speech_browser_ui <- function(id) {
 speech_browser_server <- function(id, con) {
   moduleServer(id, function(input, output, session) {
 
-    # Populate author dropdown
     observe({
       authors <- get_authors(con)
       updateSelectizeInput(session, "author",
-        choices = c("" = "", authors),
+        choices = c("All authors" = "", authors),
         server = TRUE
       )
     })
 
-    # Update year range from data
     observe({
       yr <- get_year_range(con)
       updateSliderInput(session, "year_range",
@@ -55,7 +51,6 @@ speech_browser_server <- function(id, con) {
       )
     })
 
-    # Filtered data
     filtered_data <- reactive({
       get_speeches_filtered(con,
         category = input$category,
@@ -65,7 +60,6 @@ speech_browser_server <- function(id, con) {
       )
     })
 
-    # Render table
     output$speech_table <- DT::renderDT({
       df <- filtered_data()
       df_display <- df[, c("year", "author", "category", "decade")]
@@ -80,7 +74,6 @@ speech_browser_server <- function(id, con) {
       )
     })
 
-    # Selected speech
     selected_speech <- reactive({
       row <- input$speech_table_rows_selected
       if (is.null(row) || length(row) == 0) return(NULL)
