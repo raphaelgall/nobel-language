@@ -1,13 +1,13 @@
-# Generate decade summaries using Claude API
+# Generate decade summaries using Groq API (Llama 3.3 70B)
 # Run from project root: Rscript build/build_decade_summaries.R
-# Requires ANTHROPIC_API_KEY in .Renviron
+# Requires GROQ_API_KEY in .Renviron
 
 cat("=== Generating Decade Summaries ===\n\n")
 
 source("R/utils.R")
 source("R/db_setup.R")
 source("R/db_queries.R")
-source("R/claude_api.R")
+source("R/llm_api.R")
 
 db_path <- "data/nobel_speeches.db"
 
@@ -16,9 +16,9 @@ if (!file.exists(db_path)) {
 }
 
 # Check API key
-api_key <- Sys.getenv("ANTHROPIC_API_KEY")
+api_key <- Sys.getenv("GROQ_API_KEY")
 if (api_key == "") {
-  cat("WARNING: ANTHROPIC_API_KEY not set. Skipping summary generation.\n")
+  cat("WARNING: GROQ_API_KEY not set. Skipping summary generation.\n")
   cat("Set it in .Renviron and re-run this script.\n")
   quit(status = 0)
 }
@@ -59,7 +59,7 @@ for (decade in decades) {
       cat(sprintf("ERROR: %s\n", e$message))
     })
 
-    Sys.sleep(1)  # Rate limit
+    Sys.sleep(3)  # Rate limit (Groq free tier: 30 RPM)
   }
 }
 

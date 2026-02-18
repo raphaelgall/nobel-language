@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Nobel Prize Speech Explorer** — An R Shiny web app for interactively exploring Nobel Prize speeches (Literature & Peace, 1940s–2025). Built on a corpus of 149 speeches with full-text search, word frequency analysis, decade trend summaries, and Claude-powered Q&A.
+**Nobel Prize Speech Explorer** — An R Shiny web app for interactively exploring Nobel Prize speeches (Literature & Peace, 1940s–2025). Built on a corpus of 149 speeches with full-text search, word frequency analysis, decade trend summaries, and AI-powered Q&A.
 
-Originally inspired by [nobelprizestats](https://github.com/raphaelgall/nobelprizestats) (2016), modernized with Shiny, tidytext, SQLite, and the Claude API.
+Originally inspired by [nobelprizestats](https://github.com/raphaelgall/nobelprizestats) (2016), modernized with Shiny, tidytext, SQLite, and the Groq API.
 
 ## Tech Stack
 
@@ -14,12 +14,12 @@ Originally inspired by [nobelprizestats](https://github.com/raphaelgall/nobelpri
 - **Data:** SQLite with FTS5 for full-text search
 - **Text processing:** tidytext + SnowballC
 - **Charts:** plotly + ggplot2
-- **LLM:** Claude API via httr2
+- **LLM:** Groq API (Llama 3.3 70B) via httr2
 - **Tables:** DT package
 
 ## Key Directories
 
-- `R/` — Core R functions (utils, DB setup/queries, text processing, Claude API)
+- `R/` — Core R functions (utils, DB setup/queries, text processing, LLM API)
 - `modules/` — Shiny modules (one per tab: browser, search, word freq, trends, chat)
 - `build/` — Build scripts (database ingestion, word frequencies, decade summaries)
 - `data/` — Generated SQLite database (not committed)
@@ -36,7 +36,7 @@ Rscript build/build_all.R
 # Build individual steps
 Rscript build/build_database.R
 Rscript build/build_word_frequencies.R
-Rscript build/build_decade_summaries.R  # requires ANTHROPIC_API_KEY
+Rscript build/build_decade_summaries.R  # requires GROQ_API_KEY
 
 # Run tests
 Rscript tests/test_filename_parsing.R
@@ -50,7 +50,7 @@ Rscript -e "shiny::runApp()"
 ## Important Files
 
 - `app.R` — Main Shiny entry point
-- `.Renviron` — API keys (not committed); needs `ANTHROPIC_API_KEY=sk-...`
+- `.Renviron` — API keys (not committed); needs `GROQ_API_KEY=gsk_...`
 - `data/nobel_speeches.db` — Generated SQLite database (not committed)
 
 ## Architecture
@@ -62,7 +62,7 @@ Rscript -e "shiny::runApp()"
 
 ## Outstanding Items
 
-- **Decade summaries not generated**: The "Decade Trends" tab and "Ask Claude" chat require an Anthropic API key (`ANTHROPIC_API_KEY`). This is separate from the Claude Max plan — sign up at https://console.anthropic.com, add billing, create a key, and add `ANTHROPIC_API_KEY=sk-ant-...` to `.Renviron`. Then run `Rscript build/build_decade_summaries.R`.
+- **Decade summaries not generated**: The "Decade Trends" tab and "Ask AI" chat require a Groq API key (`GROQ_API_KEY`). Sign up for free at https://console.groq.com, create a key, and add `GROQ_API_KEY=gsk_...` to `.Renviron`. Then run `Rscript build/build_decade_summaries.R`.
 - **Han Kang 2024 lecture**: Not yet published on nobelprize.org (returns 404). Re-run `build/download_missing_speeches.R` once available.
 
 ## Additional Documentation

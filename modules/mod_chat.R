@@ -1,4 +1,4 @@
-# Module: Ask Claude chat tab
+# Module: AI Chat tab
 
 chat_ui <- function(id) {
   ns <- NS(id)
@@ -7,7 +7,7 @@ chat_ui <- function(id) {
     sidebar = sidebar(
       title = "Chat",
       width = 300,
-      p("Ask questions about Nobel Prize speeches. Claude will use the speech corpus for context."),
+      p("Ask questions about Nobel Prize speeches. AI will use the speech corpus for context."),
       hr(),
       p(class = "text-muted small",
         "Try questions like:",
@@ -47,7 +47,7 @@ chat_server <- function(id, con) {
 
     # Check if API key is available
     has_api_key <- reactive({
-      Sys.getenv("ANTHROPIC_API_KEY") != ""
+      Sys.getenv("GROQ_API_KEY") != ""
     })
 
     # Send message
@@ -59,7 +59,7 @@ chat_server <- function(id, con) {
         history <- chat_history()
         history <- c(history, list(
           list(role = "user", content = msg),
-          list(role = "assistant", content = "**API key not configured.** Set ANTHROPIC_API_KEY in your .Renviron file and restart the app to enable chat.")
+          list(role = "assistant", content = "**API key not configured.** Set GROQ_API_KEY in your .Renviron file and restart the app to enable chat.")
         ))
         chat_history(history)
         updateTextInput(session, "user_input", value = "")

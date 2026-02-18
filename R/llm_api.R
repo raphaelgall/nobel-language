@@ -1,43 +1,47 @@
-# Claude API wrapper for summaries and chat
+# LLM API wrapper for summaries and chat (Groq / Llama 3.3 70B)
 
 library(httr2)
 library(jsonlite)
 
-#' Call Claude API
+#' Call Groq LLM API (OpenAI-compatible)
 #' @param messages List of message objects (role + content)
 #' @param system_prompt System prompt string
 #' @param max_tokens Maximum tokens in response
-#' @return Character string with Claude's response
-call_claude <- function(messages, system_prompt = NULL, max_tokens = 1024) {
-  api_key <- Sys.getenv("ANTHROPIC_API_KEY")
+#' @return Character string with model response
+call_llm <- function(messages, system_prompt = NULL, max_tokens = 1024) {
+  api_key <- Sys.getenv("GROQ_API_KEY")
   if (api_key == "") {
-    stop("ANTHROPIC_API_KEY not set. Add it to .Renviron or set it in your environment.")
+    stop("GROQ_API_KEY not set. Add it to .Renviron or set it in your environment.")
   }
+
+  # Prepend system prompt as a system message (OpenAI format)
+  all_messages <- list()
+  if (!is.null(system_prompt)) {
+    all_messages <- list(list(role = "system", content = system_prompt))
+  }
+  all_messages <- c(all_messages, messages)
 
   body <- list(
-    model = "claude-sonnet-4-5-20250929",
+    model = "llama-3.3-70b-versatile",
     max_tokens = max_tokens,
-    messages = messages
+    messages = all_messages
   )
-  if (!is.null(system_prompt)) {
-    body$system <- system_prompt
-  }
 
-  resp <- request("https://api.anthropic.com/v1/messages") |>
+  resp <- request("https://api.groq.com/openai/v1/chat/completions") |>
     req_headers(
-      `x-api-key` = api_key,
-      `anthropic-version` = "2023-06-01",
-      `content-type` = "application/json"
+      Authorization = paste("Bearer", api_key),
+      `Content-Type` = "application/json"
     ) |>
     req_body_json(body) |>
     req_timeout(120) |>
+    req_retry(max_tries = 3, backoff = ~ 30) |>
     req_perform()
 
   result <- resp_body_json(resp)
 
-  # Extract text from response
-  if (!is.null(result$content) && length(result$content) > 0) {
-    paste(sapply(result$content, function(block) block$text), collapse = "\n")
+  # Extract text from OpenAI-compatible response
+  if (!is.null(result$choices) && length(result$choices) > 0) {
+    result$choices[[1]]$message$content
   } else {
     stop("Unexpected API response format")
   }
@@ -90,14 +94,14 @@ generate_decade_summary <- function(con, decade, category) {
     list(role = "user", content = user_message)
   )
 
-  call_claude(messages, system_prompt, max_tokens = 1500)
+  call_llm(messages, system_prompt, max_tokens = 1500)
 }
 
 #' Chat about Nobel speeches with context injection
 #' @param con DBI connection
 #' @param user_message User's question
 #' @param chat_history List of previous messages
-#' @return Character string with Claude's response
+#' @return Character string with AI response
 chat_about_speeches <- function(con, user_message, chat_history = list()) {
   # Try to find relevant speeches mentioned in the user's message
   context <- ""
@@ -137,5 +141,5 @@ chat_about_speeches <- function(con, user_message, chat_history = list()) {
     list(role = "user", content = user_message)
   ))
 
-  call_claude(messages, system_prompt, max_tokens = 2000)
+  call_llm(messages, system_prompt, max_tokens = 2000)
 }

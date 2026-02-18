@@ -15,7 +15,7 @@ library(commonmark)
 source("R/utils.R")
 source("R/db_setup.R")
 source("R/db_queries.R")
-source("R/claude_api.R")
+source("R/llm_api.R")
 source("modules/mod_speech_browser.R")
 source("modules/mod_search.R")
 source("modules/mod_word_frequency.R")
@@ -53,7 +53,7 @@ ui <- page_navbar(
     decade_trends_ui("trends")
   ),
 
-  nav_panel("Ask Claude",
+  nav_panel("Ask AI",
     icon = icon("comments"),
     chat_ui("chat")
   ),

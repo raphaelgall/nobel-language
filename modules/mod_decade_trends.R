@@ -1,4 +1,4 @@
-# Module: Decade Trends tab (pre-computed Claude summaries)
+# Module: Decade Trends tab (pre-computed LLM summaries)
 
 decade_trends_ui <- function(id) {
   ns <- NS(id)
@@ -31,7 +31,7 @@ decade_trends_server <- function(id, con) {
           card_body(
             p("Decade summaries have not been generated yet."),
             p("Run ", code("Rscript build/build_decade_summaries.R"),
-              " with your ANTHROPIC_API_KEY set to generate them.")
+              " with your GROQ_API_KEY set to generate them.")
           )
         ))
       }
