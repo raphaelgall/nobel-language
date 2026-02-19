@@ -62,7 +62,7 @@ fts_search <- function(con, query, category = NULL, search_type = "both") {
   )
 
   where_extra <- ""
-  params <- list(fts_query, fts_query)
+  params <- list(fts_query)
 
   if (!is.null(category) && category != "all") {
     where_extra <- "AND s.category = ?"
